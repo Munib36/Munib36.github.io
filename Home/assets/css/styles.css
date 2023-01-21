@@ -1,0 +1,132 @@
+:root{
+    /* cOLOR */
+    --color-primary: rgb(255, 44, 44);
+    --color-secondary: rgb(255, 44, 44);
+    --color-text: rgb(183, 183, 183);
+
+    /* font */
+    --font-primary: 'Cairo', Arial;
+    --font-size-text: 13px;
+    --font-size-title: 20px;
+    --font-size-section-title: 48px;
+
+    /* size */
+    --size-primary: 25px;
+    --margin-primary: 25px;
+    --padding-primary: 25px;
+
+}
+body{
+    padding-top: 60px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.headline{
+    background: url(../images/background.jpg) no-repeat center center /cover;
+    height: 515px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.headline-card{
+    background-color: rgba(255, 255, 255, 0.658);
+    box-shadow: 0px 0px 8px rgb(97, 97, 97);
+    width: 520px;
+}
+.headline-name{
+    font-size: 80px;
+    color: rgb(228, 59, 87);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    text-align: center;
+}
+.headline-desc{
+    font-size: 29px;
+    text-align: center;
+    color: rgb(228, 59, 87);
+}
+.title-grid{
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(228, 59, 87);
+    font-weight: bold;
+    font-size: 60px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 80px;
+    margin: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.grid2{
+    display: grids;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    row-gap: 80px;
+    margin: 100px;
+}
+.massage-card{
+    box-shadow: 0px 0px 8px gray;
+    background-color: pink;
+}
+.thumbnail{
+    width: 100%;
+    object-fit: cover;
+}
+.text-grid{
+    margin-top: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    vertical-align: center;
+}
+.end-card{
+    background-color: rgb(14, 13, 31);
+    color: rgb(182, 182, 182);
+    height: 300px;
+    text-align: center;
+}
+.text-end-card{
+    padding-top: 30px;
+}
+.whatsapp-hover{
+    color: rgb(182, 182, 182);
+}
+.whatsapp-hover:hover{
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(182, 182, 182);
+}
+.facebook-hover{
+    color: rgb(182, 182, 182);
+}
+.facebook-hover:hover{
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(182, 182, 182);
+}
+.location-hover{
+    color: rgb(182, 182, 182);
+}
+.location-hover:hover{
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(182, 182, 182);
+}
+#hidden-card{
+    opacity: 0;
+}
