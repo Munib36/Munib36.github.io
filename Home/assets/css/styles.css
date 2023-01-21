@@ -65,15 +65,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.grid2{
-    display: grids;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    column-gap: 60px;
-    row-gap: 80px;
-    margin: 100px;
-}
+
 .massage-card{
     box-shadow: 0px 0px 8px gray;
     background-color: pink;
