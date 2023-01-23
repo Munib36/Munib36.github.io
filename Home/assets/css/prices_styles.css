@@ -11,28 +11,29 @@ li a {
 #contact {
   margin-right: 5px;
 }
-
 li a:hover {
   text-decoration: underline;
   font-weight: 700;
   transition: ease-out 0.1s;
 }
-.cards-container {
-  position: absolute;
-  max-width: 800px;
-  margin-left: 10px;
-  min-height: 100vh;
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-left: 125px;
 }
-main div {
-  max-width: 300px;
+.massage-imgs {
+  background-image: url(/Home/assets/images/background.jpg);
+  background-size: cover;
+  max-width:400px;
+  min-height: 40vh;
+  border-radius: 15px;
 }
-main div label {
+.massage-imgs button {
+  margin-bottom: 80px;
+  border-radius: 2px;
+}
+#pleasure {
+  font-size: 3rem;
+  margin-top: 60px;
   text-align: center;
-  font-weight: 700;
-  font-size: 1.3rem;
-}
-.length-selector-body-container {
-    position: absolute;
-    top: 75px;
-    right: 200px;
 }
