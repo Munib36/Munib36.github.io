@@ -1,33 +1,38 @@
 li a {
-    text-decoration: none;
-    color:rgb(206, 206, 210);
+  text-decoration: none;
+  color: rgb(206, 206, 210);
 }
 #brand {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 #nav-container {
-    border-bottom: 1px solid rgb(154, 151, 151);
+  border-bottom: 1px solid rgb(154, 151, 151);
 }
-#contact{
-    margin-right: 5px;
+#contact {
+  margin-right: 5px;
 }
 
 li a:hover {
-    text-decoration: underline;
-    font-weight: 700;
-    transition: ease-out 0.1s;
+  text-decoration: underline;
+  font-weight: 700;
+  transition: ease-out 0.1s;
 }
 .cards-container {
-    position: absolute;
-    max-width: 800px;
-    margin-left: 10px;
-    min-height: 100vh;
+  position: absolute;
+  max-width: 800px;
+  margin-left: 10px;
+  min-height: 100vh;
 }
-.full-body-card {
-    max-width: 300px;
+main div {
+  max-width: 300px;
 }
 main div label {
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.3rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.length-selector-body-container {
+    position: absolute;
+    top: 75px;
+    right: 200px;
 }
