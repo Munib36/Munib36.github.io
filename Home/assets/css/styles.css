@@ -66,13 +66,15 @@ body{
     align-items: center;
 }
 .grid2{
-    display: grids;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     column-gap: 60px;
     row-gap: 80px;
-    margin: 100px;
+    margin-left: 304px;
+    margin-right: 304px;
+    margin-bottom: 100px;
 }
 .massage-card{
     box-shadow: 0px 0px 8px gray;
@@ -129,4 +131,11 @@ body{
 }
 #hidden-card{
     opacity: 0;
+    user-drag: none;
+    -webkit-user-drag: none;
+    
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
