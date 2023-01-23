@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> <!-- this is to link pico.css-->
   </head>
   <body>
+
     <nav id="nav-container">
       <ul>
         <li id="brand"><strong>Mom's Website</strong></li>
@@ -19,12 +20,31 @@
         <li id="contact"><a href="#" role="button">Contact</a></li>
       </ul>
     </nav>
-    <main class="buttons-container">
-      <div class="massage-imgs"><button>Full Body Massage</button></div>
-      <div class="massage-imgs"><button>Back Massage</button></div>
-      <div class="massage-imgs"><button>Other Massages</button></div>
+    <main class="cards-container">
+      <div class="full-body-card">
+        <label for="full-body-selector">Full Body Massage</label>
+        <select name="full-body-selector" id="full-body-selector">
+          <option value="classic-massage">Classic Massage</option>
+          <option value="swedish-massage">Swedish Massage</option>
+          <option value="Relax-massage">Relax Massage</option>
+          <option value="Deep-tissue-massage">Deep Tissue Massage</option>
+          <option value="Lymphatic-drainage-massage">Lymphatic Drainage Massage</option>
+        </select>
+        <div class="length-selector-body-container">
+          <label for="length-selector-full-body">Length</label>
+          <select name="length-selector" id="length-selector-full-body">
+            <option value="60">60 minutes</option>
+            <option value="90">90 minutes</option>
+            <option value="120">120 minutes</option>
+          </select>
+        </div>
+      </div>
     </main>
     <i><h1 id="pleasure">you pleased is all we need..</h1></i>
 </html>
 
+<!-- STILL NOT RESPONSIVE so don't shrink the screen, cus stuff will get ugly, will work on dat later-->
+<!-- WE NEED JAVASCRIPT FOR SIDEBAR (ITS ON YOU, well both of us, but mostly you), will give you details of the plan later on discord-->
+<!-- PICO CSS IS THE GOAT, bootstrap is for losers-->
+<!-- ONLY USED PICO CSS FOR NAVIGATION BAR, else is vanilla css-->
 
