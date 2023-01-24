@@ -1,0 +1,25 @@
+.buttons-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 13px;
+  }
+.massage-imgs {
+    background-image: url(/Home/assets/images/background.jpg);
+    background-size: cover;
+    max-width:400px;
+    min-height: 40vh;
+    border-radius: 15px;
+  
+}
+.massage-imgs button {
+    margin-bottom: 80px;
+    border-radius: 2px;
+  }
+#pleasure {
+    font-size: 3rem;
+    margin-top: 60px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+}

@@ -2,6 +2,9 @@ body{
     font-family: arial, cursive;
     padding-left: 20%;
 }
+input{
+    width: 30px;
+}
 .total{
     margin-top: 30px;
 }
