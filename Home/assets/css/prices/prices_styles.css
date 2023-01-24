@@ -1,3 +1,6 @@
+body{
+
+}
 li a {
   text-decoration: none;
   color: rgb(206, 206, 210);
@@ -24,7 +27,7 @@ li a:hover {
   min-height: 100vh;
 }
 main div {
-  max-width: 300px;
+  max-width: 800px;
 }
 main div label {
   text-align: center;
@@ -32,7 +35,16 @@ main div label {
   font-size: 1.3rem;
 }
 .length-selector-body-container {
-    position: absolute;
-    top: 75px;
-    right: 200px;
+  position: absolute;
+  top: 75px;
+  right: 200px;
+}
+.massage-type-container {
+  max-width: 300px;
+}
+.full-body-card {
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: gray;
+  border: solid;
 }

@@ -133,7 +133,6 @@ body {
 }
 #hidden-card{
     opacity: 0;
-    user-drag: none;
     -webkit-user-drag: none;
     
     user-select: none;

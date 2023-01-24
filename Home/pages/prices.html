@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prices</title>
-    <link rel="stylesheet" href="/Home/assets/css/prices_styles.css"/>
+    <link rel="stylesheet" href="/Home/assets/css/prices/prices_styles.css"/>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> <!-- this is to link pico.css-->
   </head>
   <body>
@@ -23,7 +23,8 @@
 
     <main class="cards-container">
       <div class="full-body-card">
-        <label for="full-body-selector">Full Body Massage</label>
+        <div class="massage-type-container">
+          <label for="full-body-selector">Full Body Massage</label>
         <select name="full-body-selector" id="full-body-selector">
           <option value="classic-massage">Classic Massage</option>
           <option value="swedish-massage">Swedish Massage</option>
@@ -31,6 +32,8 @@
           <option value="Deep-tissue-massage">Deep Tissue Massage</option>
           <option value="Lymphatic-drainage-massage">Lymphatic Drainage Massage</option>
         </select>
+        </div>
+
         <div class="length-selector-body-container">
           <label for="length-selector-full-body">Length</label>
           <select name="length-selector" id="length-selector-full-body">
