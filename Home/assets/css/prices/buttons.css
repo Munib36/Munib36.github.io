@@ -1,21 +1,29 @@
 .buttons-container {
+    padding-left: 100px;
+    padding-right: 100px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 13px;
-  }
+    column-gap: 10%;
+}
 .massage-imgs {
-    background-image: url(/Home/assets/images/background.jpg);
-    background-size: cover;
-    max-width:400px;
-    min-height: 40vh;
     border-radius: 15px;
-  
 }
 .massage-imgs button {
-    margin-bottom: 80px;
     border-radius: 2px;
-  }
+    margin-bottom: 0px;
+}
+.button-div {
+    height: 100px;
+    width: 100%;
+
+}
+.button-div img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    object-position: middle;
+}
 #pleasure {
     font-size: 3rem;
     margin-top: 60px;

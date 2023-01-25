@@ -18,7 +18,7 @@ li a {
   top: 0px;
   right: 0px;
   left: 0px;
-  height: 10%;
+  height: 65px;
   display: grid;
   grid-template-columns: 1fr 250px;
 }
