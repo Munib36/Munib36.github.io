@@ -1,14 +1,14 @@
 .length-selector-body-container {
-    position: absolute;
-    top: 75px;
-    right: 200px;
-  }
-  .massage-type-container {
+
+}
+
+.massage-type-container {
     max-width: 300px;
-  }
-  .full-body-card {
+}
+
+.full-body-card {
     border-radius: 5px;
     border-width: 1px;
     border-color: gray;
     border: solid;
-  }
+}

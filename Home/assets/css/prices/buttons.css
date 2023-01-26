@@ -13,13 +13,18 @@
     border-radius: 2px;
     margin-bottom: 0px;
 }
+.massage-imgs:hover {
+    transition: 500ms;
+    opacity: 0.7;
+    cursor: pointer;
+}
 .button-div {
-    height: 100px;
+    height: 150px;
     width: 100%;
 
 }
 .button-div img {
-    height: 180px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: middle;

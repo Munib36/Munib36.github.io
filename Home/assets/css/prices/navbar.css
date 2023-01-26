@@ -21,6 +21,7 @@ li a {
   height: 65px;
   display: grid;
   grid-template-columns: 1fr 250px;
+  background-color: pink;
 }
 li{
   padding: 0px;

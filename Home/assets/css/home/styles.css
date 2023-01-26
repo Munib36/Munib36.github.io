@@ -24,7 +24,7 @@ body {
 }
 
 .headline {
-  background: url(../images/background.jpg) no-repeat center center / cover;
+  background: url(../../images/background.jpg) no-repeat center center / cover;
   height: 515px;
   display: flex;
   align-items: center;
