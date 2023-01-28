@@ -1,5 +1,18 @@
 .cards-container{
     padding-top: 10px;
+    width: 100%;
+}
+
+.full-body-card {
+    display: flex;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+    border: solid;
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color: red;
 }
 
 .massage-type-container {
@@ -8,18 +21,10 @@
 }
 
 .length-selector-body-container {
-    width: 300px;
+    min-width: 150px;
+    max-width: 600px;
     display: inline-block;
     margin-left: 100px;
 }
 
 
-.full-body-card {
-    display: flex;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: gray;
-    border: solid;
-    width: 720px;
-    margin-left: 15%;
-}

@@ -15,9 +15,6 @@
      
   </head>
   <body>
-    <div class="sidebar">
-      ewae
-    </div>
 
 
 
@@ -94,7 +91,7 @@
 
 
 
-    <main class="cards-container">
+    <div class="cards-container">
       <div class="full-body-card">
         <div class="massage-type-container">
           <label for="full-body-selector">Full Body Massage</label>
@@ -119,21 +116,39 @@
 
 
       <div class="contact-div">
-        <form action="">
-          <h3>GET IN TOUCH</h3>
-          <input type="text" name="" id="" placeholder="You're Name" required>
-          <input type="text" name="" id="" placeholder="You're Name" required>
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <h3>Order</h3>
+          <input type="text" name="" id="name" placeholder="You're Name" required>
+          <input type="text" name="" id="email" placeholder="Gmail id" required>
+          <input type="text" name="" id="Phone" placeholder="Phone no." required>
+          <input type="text" name="" id="location" placeholder="your location in Amman" required>
+          <input type="text" name="" id="Phone" placeholder="message (optional)">
         </form>
-        
       </div>
-      
-    </main>
+    </div>
 
     
 
     
 
     <script src="../assets/css/prices/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+      function sendEmail(){
+        Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "username",
+        Password : "password",
+        To : 'them@website.com',
+        From : "you@isp.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+      }
+      
+    </script>
+    
 </html>
 
 
