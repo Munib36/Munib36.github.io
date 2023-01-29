@@ -104,7 +104,7 @@
         </select>
         </div>
 
-        <div class="length-selector-body-container">
+        <div class="length-selector-body-container">   
           <label for="length-selector-full-body">Length</label>
           <select name="length-selector" id="length-selector-full-body">
             <option value="60">60 minutes</option>
@@ -114,15 +114,19 @@
         </div>
       </div>
 
+      <!-- WIUEDHAIWUOHDAOWIUHDAOIUH-->
+
+
 
       <div class="contact-div">
         <form onsubmit="sendEmail(); reset(); return false;">
           <h3>Order</h3>
           <input type="text" name="" id="name" placeholder="You're Name" required>
           <input type="text" name="" id="email" placeholder="Gmail id" required>
-          <input type="text" name="" id="Phone" placeholder="Phone no." required>
+          <input type="text" name="" id="phone" placeholder="Phone no." required>
           <input type="text" name="" id="location" placeholder="your location in Amman" required>
-          <input type="text" name="" id="Phone" placeholder="message (optional)">
+          <input type="text" name="" id="message" placeholder="message (optional)">
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
@@ -135,15 +139,19 @@
     <script src="https://smtpjs.com/v3/smtp.js">
       function sendEmail(){
         Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "username",
-        Password : "password",
-        To : 'them@website.com',
-        From : "you@isp.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
+        Host : "smtp.gmail.com",
+        Username : "mrmuni1050@gmail.com",
+        Password : "Keluveywochtis36",
+        To : 'mrmuni1050@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "Massage request",
+        Body : "<br> Name: " + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone: " + document.getElementById("phone").value
+                + "<br> Phone: " + document.getElementById("location").value
+                + "<br> message: " + document.getElementById("message").value
         }).then(
-          message => alert(message)
+          alert("3bdallah")
         );
       }
       
