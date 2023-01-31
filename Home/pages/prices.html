@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Prices</title>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> <!-- this is to link pico.css-->
-    
+    <link rel="stylesheet" href="../assets/css/general.css">
     <link rel="stylesheet" href="../assets/css/prices/navbar.css">
     <link rel="stylesheet" href="../assets/css/prices/buttons.css">
     <link rel="stylesheet" href="../assets/css/prices/cards.css">
@@ -114,49 +114,23 @@
         </div>
       </div>
 
-      <!-- WIUEDHAIWUOHDAOWIUHDAOIUH-->
+        <div class="contact-div">
+          <form>
+            <h3>Order</h3>
+            <input type="text" name="" id="name" placeholder="You're Name" required>
+            <input type="text" name="" id="email" placeholder="Gmail id" required>
+            <input type="text" name="" id="phone" placeholder="Phone no." required>
+            <input type="text" name="" id="location" placeholder="your location in Amman" required>
+            <input type="text" name="" id="message" placeholder="message (optional)">
+            <button type="submit">Send</button>
+          </form>
+        </div>
 
-
-
-      <div class="contact-div">
-        <form onsubmit="sendEmail(); reset(); return false;">
-          <h3>Order</h3>
-          <input type="text" name="" id="name" placeholder="You're Name" required>
-          <input type="text" name="" id="email" placeholder="Gmail id" required>
-          <input type="text" name="" id="phone" placeholder="Phone no." required>
-          <input type="text" name="" id="location" placeholder="your location in Amman" required>
-          <input type="text" name="" id="message" placeholder="message (optional)">
-          <button type="submit">Send</button>
-        </form>
       </div>
-    </div>
 
-    
 
-    
 
-    <script src="../assets/css/prices/script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-      function sendEmail(){
-        Email.send({
-        Host : "smtp.gmail.com",
-        Username : "mrmuni1050@gmail.com",
-        Password : "Keluveywochtis36",
-        To : 'mrmuni1050@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "Massage request",
-        Body : "<br> Name: " + document.getElementById("name").value
-                + "<br> Email: " + document.getElementById("email").value
-                + "<br> Phone: " + document.getElementById("phone").value
-                + "<br> Phone: " + document.getElementById("location").value
-                + "<br> message: " + document.getElementById("message").value
-        }).then(
-          alert("3bdallah")
-        );
-      }
-      
-    </script>
-    
+      <script src="../assets/js/prices/buttons.js"></script>
 </html>
 
 

@@ -1,30 +1,34 @@
 .cards-container{
     padding-top: 10px;
-    width: 100%;
-}
-
-.full-body-card {
-    display: flex;
+    width: 80%;
     border-radius: 5px;
     border-width: 1px;
     border-color: gray;
     border: solid;
+    margin-left: 10%;
+}
+
+.full-body-card {
+    display: flex;
+    padding-left: 15px;
     width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
-    background-color: red;
+    margin-right: 1%;
+    margin-left: 5%;
 }
 
 .massage-type-container {
     width: 300px;
     display: inline-block;
+    flex: 5;
+    padding-right: 30%;
 }
 
 .length-selector-body-container {
-    min-width: 150px;
-    max-width: 600px;
     display: inline-block;
-    margin-left: 100px;
+    padding-right: 15px;
+    flex: 1;
 }
 
-
+.contact-div {
+    
+}

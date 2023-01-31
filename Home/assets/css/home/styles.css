@@ -1,22 +1,8 @@
-:root {
-  /* cOLOR */
-  --color-primary: rgb(255, 44, 44);
-  --color-secondary: rgb(255, 44, 44);
-  --color-text: rgb(183, 183, 183);
-
-  /* font */
-  --font-primary: "Cairo", Arial;
-  --font-size-text: 13px;
-  --font-size-title: 20px;
-  --font-size-section-title: 48px;
-
-  /* size */
-  --size-primary: 25px;
-  --margin-primary: 25px;
-  --padding-primary: 25px;
-}
 body {
   padding-top: 60px;
+}
+.navbar {
+  background-color: #2d3236;
 }
 .logo {
   width: 50px;
@@ -29,7 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(183, 183, 183);
 }
 .headline-card {
   background-color: rgba(255, 255, 255, 0.658);
@@ -93,8 +79,8 @@ body {
   vertical-align: center;
 }
 .end-card {
-  background-color: rgb(14, 13, 31);
-  color: rgb(182, 182, 182);
+  background-color: #2d3236;
+  color: rgb(183, 183, 183);
   height: 300px;
   text-align: center;
 }
@@ -102,41 +88,35 @@ body {
   padding-top: 30px;
 }
 .whatsapp-hover {
-  color: rgb(182, 182, 182);
+  color: rgb(183, 183, 183);
 }
 .whatsapp-hover:hover {
   cursor: pointer;
   font-weight: bold;
   text-decoration: underline;
-  color: rgb(182, 182, 182);
+  color: rgb(183, 183, 183);
 }
 .facebook-hover {
-  color: rgb(182, 182, 182);
+  color: rgb(183, 183, 183);
 }
 .facebook-hover:hover {
   cursor: pointer;
   font-weight: bold;
   text-decoration: underline;
-  color: rgb(182, 182, 182);
+  color: rgb(183, 183, 183);
 }
 .location-hover {
-  color: rgb(182, 182, 182);
+  color: rgb(183, 183, 183);
 }
 .location-hover:hover {
   cursor: pointer;
   font-weight: bold;
   text-decoration: underline;
-  color: rgb(182, 182, 182);
+  color: rgb(183, 183, 183);
 }
 #hidden-card {
   opacity: 0;
 }
 #hidden-card{
     opacity: 0;
-    -webkit-user-drag: none;
-    
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 }
