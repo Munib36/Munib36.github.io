@@ -10,25 +10,24 @@
 
 .full-body-card {
     display: flex;
-    padding-left: 15px;
-    width: 70%;
-    margin-right: 1%;
-    margin-left: 5%;
+    width: 90%;
+    padding-left: 10%;
 }
 
 .massage-type-container {
     width: 300px;
     display: inline-block;
-    flex: 5;
+    flex: 2;
     padding-right: 30%;
 }
 
 .length-selector-body-container {
     display: inline-block;
-    padding-right: 15px;
+
     flex: 1;
 }
 
 .contact-div {
-    
+    width: 90%;
+    padding-left: 10%;
 }

@@ -4,6 +4,8 @@ li a {
 }
 #brand {
   margin-left: 20px;
+  z-index: 1;
+  opacity: 1;
 }
 #pages-div{
   height: 60px;
