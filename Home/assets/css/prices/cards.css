@@ -15,10 +15,9 @@
 }
 
 .massage-type-container {
-    width: 300px;
     display: inline-block;
     flex: 2;
-    padding-right: 30%;
+    padding-right: 15%;
 }
 
 .length-selector-body-container {
