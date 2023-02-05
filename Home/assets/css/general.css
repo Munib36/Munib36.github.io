@@ -13,3 +13,6 @@
     --font-size-title: 20px;
     --font-size-section-title: 48px;
 }
+img {
+    pointer-events: none
+}
