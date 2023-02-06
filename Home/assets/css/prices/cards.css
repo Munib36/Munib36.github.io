@@ -7,6 +7,10 @@
     border: solid;
     margin-left: 10%;
 }
+#cards{
+    transition: 500ms;
+    display: none;
+}
 
 .full-body-card {
     display: flex;
@@ -19,7 +23,35 @@
     flex: 2;
     padding-right: 15%;
 }
-
+/*
+#full{
+    display: none;
+}
+#back{
+    display: none;
+}
+#other{
+    display: none;
+}
+#full-body-selector{
+    display: none;
+}
+#back-selector{
+    display: none;
+}
+#other-selector{
+    display: none;
+}
+#length-selector-full-body{
+    display: none;
+}
+#length-selector-back{
+    display: none;
+}
+#length-selector-other{
+    display: none;
+}
+*/
 .length-selector-body-container {
     display: inline-block;
 
