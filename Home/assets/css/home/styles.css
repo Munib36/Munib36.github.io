@@ -20,17 +20,17 @@ body {
 .headline-card {
   background-color: rgba(255, 255, 255, 0.658);
   box-shadow: 0px 0px 8px rgb(97, 97, 97);
-  width: 520px;
+  width: 30%;
 }
 .headline-name {
-  font-size: 80px;
+  font-size: 400%;
   color: rgb(228, 59, 87);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
   text-align: center;
 }
 .headline-desc {
-  font-size: 29px;
+  font-size: 100%;
   text-align: center;
   color: rgb(228, 59, 87);
 }
@@ -44,8 +44,8 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 6%;
-  row-gap: 6%;
+  column-gap: 7%;
+  row-gap: 11%;
   margin: 100px;
   margin-bottom: 6%;
   justify-content: center;
@@ -56,17 +56,17 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    column-gap: 60px;
-    row-gap: 80px;
-    margin-left: 304px;
-    margin-right: 304px;
+    column-gap: 7%;
+    row-gap: 11%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-bottom: 100px;
 }
 .massage-card {
   box-shadow: 0px 0px 8px gray;
   background-color: pink;
-  height: 70%;
-  border-radius: 7px;
+  height: 100%;
+  width: 100%;
 }
 .thumbnail {
   width: 100%;
@@ -76,12 +76,12 @@ body {
   border-top-left-radius: 7px;
 }
 .text-grid {
-  box-shadow: 0px 0px 8px gray;
+  margin-top: 6px;
+  font-weight: bold;
+  font-size: 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-weight: bold;
-  font-size: 30px;
   vertical-align: center;
   background-color: pink;
   border-bottom-right-radius: 7px;
@@ -128,4 +128,22 @@ body {
 }
 #hidden-card{
     opacity: 0;
+}
+
+@media (max-width: 800px) {
+  .text-grid {
+    height: 169px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .text-grid {
+    height: 135px;
+  }
+}
+
+@media (max-width: 815px) {
+  .headline-card {
+    width: 50%;
+  }
 }
