@@ -1,6 +1,7 @@
-let numbs = [1,2,3,4,5,6,7,8]
-let squares = numbs.map(square);
-console.log(squares)
-function square (x) {
-  return Math.pow(x, 2)
+let prices = [1, 12 ,14, 6, 12, 30, 20];
+let total = 0;
+
+for (let i = 0; i <= prices.length; i++) {
+	total += prices[i];
 }
+console.log(total);
