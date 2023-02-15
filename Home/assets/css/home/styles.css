@@ -44,9 +44,10 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 60px;
-  row-gap: 80px;
+  column-gap: 6%;
+  row-gap: 6%;
   margin: 100px;
+  margin-bottom: 6%;
   justify-content: center;
   align-items: center;
 }
@@ -64,19 +65,27 @@ body {
 .massage-card {
   box-shadow: 0px 0px 8px gray;
   background-color: pink;
+  height: 70%;
+  border-radius: 7px;
 }
 .thumbnail {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
 }
 .text-grid {
-  margin-top: 6px;
+  box-shadow: 0px 0px 8px gray;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
   vertical-align: center;
+  background-color: pink;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 .end-card {
   background-color: #2d3236;
