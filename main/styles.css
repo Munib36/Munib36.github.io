@@ -1,0 +1,32 @@
+.hole {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: green;
+    margin: 10px;
+    display: inline-block;
+  }
+  
+  .mole {
+    width: 80px;
+    height: 80px;
+    background-color: brown;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    animation: moleUpAndDown 1s infinite;
+  }
+  
+  @keyframes moleUpAndDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

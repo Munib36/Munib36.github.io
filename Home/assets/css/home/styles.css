@@ -1,22 +1,8 @@
-:root {
-  /* cOLOR */
-  --color-primary: rgb(255, 44, 44);
-  --color-secondary: rgb(255, 44, 44);
-  --color-text: rgb(183, 183, 183);
-
-  /* font */
-  --font-primary: "Cairo", Arial;
-  --font-size-text: 13px;
-  --font-size-title: 20px;
-  --font-size-section-title: 48px;
-
-  /* size */
-  --size-primary: 25px;
-  --margin-primary: 25px;
-  --padding-primary: 25px;
-}
 body {
   padding-top: 60px;
+}
+.navbar {
+  background-color: #2d3236;
 }
 .logo {
   width: 50px;
@@ -29,22 +15,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(183, 183, 183);
 }
 .headline-card {
   background-color: rgba(255, 255, 255, 0.658);
   box-shadow: 0px 0px 8px rgb(97, 97, 97);
-  width: 520px;
+  width: 30%;
 }
 .headline-name {
-  font-size: 80px;
+  font-size: 400%;
   color: rgb(228, 59, 87);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
   text-align: center;
 }
 .headline-desc {
-  font-size: 29px;
+  font-size: 100%;
   text-align: center;
   color: rgb(228, 59, 87);
 }
@@ -58,9 +44,10 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 60px;
-  row-gap: 80px;
+  column-gap: 7%;
+  row-gap: 11%;
   margin: 100px;
+  margin-bottom: 6%;
   justify-content: center;
   align-items: center;
 }
@@ -69,32 +56,40 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    column-gap: 60px;
-    row-gap: 80px;
-    margin-left: 304px;
-    margin-right: 304px;
+    column-gap: 7%;
+    row-gap: 11%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-bottom: 100px;
 }
 .massage-card {
   box-shadow: 0px 0px 8px gray;
   background-color: pink;
+  height: 100%;
+  width: 100%;
 }
 .thumbnail {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
 }
 .text-grid {
   margin-top: 6px;
+  font-weight: bold;
+  font-size: 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-weight: bold;
-  font-size: 30px;
   vertical-align: center;
+  background-color: pink;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 .end-card {
-  background-color: rgb(14, 13, 31);
-  color: rgb(182, 182, 182);
+  background-color: #2d3236;
+  color: rgb(183, 183, 183);
   height: 300px;
   text-align: center;
 }
@@ -102,41 +97,53 @@ body {
   padding-top: 30px;
 }
 .whatsapp-hover {
-  color: rgb(182, 182, 182);
+  color: rgb(183, 183, 183);
 }
 .whatsapp-hover:hover {
   cursor: pointer;
   font-weight: bold;
   text-decoration: underline;
-  color: rgb(182, 182, 182);
+  color: rgb(183, 183, 183);
 }
 .facebook-hover {
-  color: rgb(182, 182, 182);
+  color: rgb(183, 183, 183);
 }
 .facebook-hover:hover {
   cursor: pointer;
   font-weight: bold;
   text-decoration: underline;
-  color: rgb(182, 182, 182);
+  color: rgb(183, 183, 183);
 }
 .location-hover {
-  color: rgb(182, 182, 182);
+  color: rgb(183, 183, 183);
 }
 .location-hover:hover {
   cursor: pointer;
   font-weight: bold;
   text-decoration: underline;
-  color: rgb(182, 182, 182);
+  color: rgb(183, 183, 183);
 }
 #hidden-card {
   opacity: 0;
 }
 #hidden-card{
     opacity: 0;
-    -webkit-user-drag: none;
-    
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+}
+
+@media (max-width: 800px) {
+  .text-grid {
+    height: 169px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .text-grid {
+    height: 135px;
+  }
+}
+
+@media (max-width: 815px) {
+  .headline-card {
+    width: 50%;
+  }
 }

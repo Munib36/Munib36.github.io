@@ -4,6 +4,8 @@ li a {
 }
 #brand {
   margin-left: 20px;
+  z-index: 1;
+  opacity: 1;
 }
 #pages-div{
   height: 60px;
@@ -13,7 +15,6 @@ li a {
   padding-right: 10px;
 }
 #nav-container {
-  position: fixed;
   border-bottom: 1px solid rgb(154, 151, 151);
   top: 0px;
   right: 0px;

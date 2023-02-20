@@ -1,30 +1,64 @@
 .cards-container{
     padding-top: 10px;
-    width: 100%;
-}
-
-.full-body-card {
-    display: flex;
+    width: 80%;
     border-radius: 5px;
     border-width: 1px;
     border-color: gray;
     border: solid;
-    width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
-    background-color: red;
+    margin-left: 10%;
+}
+#cards{
+    transition: 500ms;
+    display: none;
+}
+
+.full-body-card {
+    display: flex;
+    width: 90%;
+    padding-left: 10%;
 }
 
 .massage-type-container {
-    width: 300px;
     display: inline-block;
+    flex: 2;
+    padding-right: 15%;
 }
-
+/*
+#full{
+    display: none;
+}
+#back{
+    display: none;
+}
+#other{
+    display: none;
+}
+#full-body-selector{
+    display: none;
+}
+#back-selector{
+    display: none;
+}
+#other-selector{
+    display: none;
+}
+#length-selector-full-body{
+    display: none;
+}
+#length-selector-back{
+    display: none;
+}
+#length-selector-other{
+    display: none;
+}
+*/
 .length-selector-body-container {
-    min-width: 150px;
-    max-width: 600px;
     display: inline-block;
-    margin-left: 100px;
+
+    flex: 1;
 }
 
-
+.contact-div {
+    width: 90%;
+    padding-left: 10%;
+}

@@ -1,6 +1,12 @@
 body{
   font-style: arial;
+  color: rgb(183, 183, 183);
 }
+
 main div {
   max-width: 800px;
+}
+
+@media (max-width: 950px) {
+  
 }
