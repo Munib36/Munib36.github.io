@@ -1,0 +1,19 @@
+#main {
+    
+}
+
+#label {
+    font-size: 100px;
+}
+
+#enter {
+    width: 20%;
+    font-size: 50px;
+    height: 100px;
+    background-color: teal;
+    border-style: solid;
+    border-color: rgb(0, 85, 85);
+}
+#enter:hover {
+    box-shadow: 0px 0px 15px 1px rgb(44, 44, 44);
+}
