@@ -1,9 +1,14 @@
-#main {
-    
-}
-
 #label {
-    font-size: 100px;
+    font-size: 50px;
+    background-color: teal;
+    border-color: rgb(0, 85, 85);
+    border-style: solid;
+    border-radius: 20px;
+    height: 100px;
+    width: 20%;
+    display: inline-block;
+    min-width: 155px;
+    margin-left: 40%;
 }
 
 #enter {
@@ -13,7 +18,61 @@
     background-color: teal;
     border-style: solid;
     border-color: rgb(0, 85, 85);
+    border-radius: 20px;
+    min-width: 155px;
+    display: inline-block;
+    margin-left: 40%;
 }
 #enter:hover {
     box-shadow: 0px 0px 15px 1px rgb(44, 44, 44);
+}
+
+#hint{
+    display: inline-block;
+    opacity: 0;
+    background-color: red;
+    width: 20%;
+    height: 100px;
+    font-size: 50px;
+    border-style: none;
+    border-radius: 20px;
+    min-width: 155px;
+    margin-left: 30%;
+}
+
+#hint:hover{
+    opacity: 1;
+    background-color: red;
+    width: 20%;
+    height: 100px;
+    font-size: 50px;
+    border-style: none;
+    border-radius: 20px;
+    margin-left: 30%;
+}
+
+
+#hint2{
+    display: inline-block;
+    opacity: 0;
+    background-color: red;
+    width: 20%;
+    height: 100px;
+    font-size: 50px;
+    border-style: none;
+    border-radius: 20px;
+    min-width: 155px;
+}
+
+#hint2:hover{
+    opacity: 1;
+    background-color: red;
+    width: 20%;
+    height: 100px;
+    font-size: 50px;
+    border-style: none;
+    border-radius: 20px;
+}
+@media (min-width: 792) {
+    
 }
