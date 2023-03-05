@@ -1,0 +1,28 @@
+[class*="col"] {
+    padding: 1rem;
+    background-color: #33b5e5;
+    border: 2px solid #fff;
+    color: #fff;
+}
+body, html{
+    padding-top: 60px;
+    justify-content: center;
+}
+#header{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #33b5e5;
+    font-size: 30px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+.abd{
+    text-align: center;
+    padding: 10px;
+    background-color: blue;
+    width: 100px;
+    color: white;
+    border-radius: 10px;
+}

@@ -2,5 +2,22 @@
   "dependencies": {
     "@picocss/pico": "^1.5.6",
     "bootstrap": "^5.3.0-alpha1"
-  }
+  },
+  "name": "munib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Munib36/Munib36.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Munib36/Munib36.github.io/issues"
+  },
+  "homepage": "https://github.com/Munib36/Munib36.github.io#readme",
+  "description": ""
 }
