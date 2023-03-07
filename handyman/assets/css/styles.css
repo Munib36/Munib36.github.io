@@ -1,0 +1,73 @@
+body{
+    padding-top: 100px;
+    padding-bottom: 900px;
+}
+
+.logo{
+    height: 50px;
+    object-position: center;
+    object-fit: cover;
+    background-color: red;
+}
+.navbar{
+    padding-left: 9px;
+    padding-right: 9%;
+    background-color: white;
+    box-shadow: 0px 1px 5px 1px rgb(131, 131, 131);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar-brand{
+    color: #48487f;
+    font-weight: bold;
+}
+.nav-link{
+    color: white;
+    font-weight: bold;
+    background-color: #48487f;
+}
+.header-btn:hover{
+    box-shadow: 1px 1px 6px 1px gray;
+    color: white;
+    cursor: pointer;
+}
+
+
+.headline-div{
+    padding-top: 90px;
+    text-align: center;
+}
+.headline{
+    color: #48487f;
+    font-weight: bold;
+    font-size: 60px;
+}
+.headline-description{
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.headline-btn{
+    margin: 0 auto;
+    width: 200px;
+    height: 80px;
+    border-style: solid;
+    border-color: #48487f;
+    font-size: 20px;
+}
+.headline-btn:hover{
+    box-shadow: 1px 1px 6px 1px gray;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+.title{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
