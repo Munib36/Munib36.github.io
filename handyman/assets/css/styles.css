@@ -1,3 +1,9 @@
+@media (min-width: 401) {
+    .navbar-brand{
+        padding-left: 0px;
+    }
+}
+
 body{
     padding-top: 100px;
     padding-bottom: 900px;
@@ -22,6 +28,7 @@ body{
 .navbar-brand{
     color: #48487f;
     font-weight: bold;
+    padding-left: 9%;
 }
 .nav-link{
     color: white;
@@ -63,6 +70,12 @@ body{
     cursor: pointer;
 }
 
+.big-pic{
+    padding-top: 50px;
+    width: 100%;
+}
+
+
 
 
 
@@ -70,4 +83,8 @@ body{
     padding-top: 100px;
     text-align: center;
     font-size: 30px;
+}
+
+.second-row{
+    padding-top: 24px;
 }
