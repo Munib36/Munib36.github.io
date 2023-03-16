@@ -4,6 +4,12 @@
     }
 }
 
+.munib-primary {
+    color: #48487f;
+    font-weight: bold;
+}
+  
+
 body{
     padding-top: 100px;
     padding-bottom: 900px;
@@ -30,10 +36,19 @@ body{
     font-weight: bold;
     padding-left: 9%;
 }
+.navbar-brand:hover{
+    color: #48487f;
+    cursor: default;
+}
+.navbar-brand:active{
+    color: #48487f;
+    cursor: default;
+}
 .nav-link{
     color: white;
     font-weight: bold;
     background-color: #48487f;
+    border-radius: 2px;
 }
 .header-btn:hover{
     box-shadow: 1px 1px 6px 1px gray;
@@ -63,6 +78,8 @@ body{
     border-style: solid;
     border-color: #48487f;
     font-size: 20px;
+    padding-top: 20px;
+    border-radius: 2px;
 }
 .headline-btn:hover{
     box-shadow: 1px 1px 6px 1px gray;
@@ -87,4 +104,11 @@ body{
 
 .second-row{
     padding-top: 24px;
+}
+
+
+
+
+.testimonials{
+    font-size: 18px;
 }
