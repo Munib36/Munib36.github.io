@@ -1,24 +1,13 @@
-class Car{
-    constructor(name, speed, color){
-        this.name = name;
-        this.speed = speed;
-        this.color = color;
-    }
-    drive(){
-        console.log(`you drive the ${this.name}`)
+const input = document.getElementById("input")
+const submit = document.getElementById("submit")
+const sayarr = (x) => {
+    for(let i in x){
+        console.log(x[i])
     }
 }
 
-const car1 = new Car("lambo", 220, "green")
-const car2 = new Car("fiat", 40, "white")
-const car3 = new Car("challenger", 90, "red")
-const car4 = new Car("hyundai", 70, "black")
+let arr = [];
+let userValue = 
+arr.push(userValue);
 
-const cars = [car1, car2, car3, car4]
-
-function startrace(cars) {
-
-}
-for(const car of cars){
-    car.drive()
-}
+sayarr(arr)
