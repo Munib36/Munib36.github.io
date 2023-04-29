@@ -4,7 +4,6 @@ setInterval( () => {
 
     const heart = document.createElement("span")
 
-    
     heart.style.top = window.innerHeight + "px"
     let ranNum = Math.random()*100;
     heart.style.width = ranNum + "px";
@@ -13,13 +12,15 @@ setInterval( () => {
     let ranX = Math.random()*(window.innerWidth);
     heart.style.left = ranX + "px"
     body.appendChild(heart)
+    heart.addEventListener("click", () => {
+        heart.style.background = "url(\"./popped-bloon.png\")"
+    })
     setTimeout(() => {
         heart.remove();
-    }, 7000);
-
-}, 50);
+    }, 2000);
 
 
+}, 1);
 
 
 

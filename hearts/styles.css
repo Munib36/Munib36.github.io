@@ -11,7 +11,7 @@ audio{
 
 }
 span{
-    background: url("./2530804_general_heart_heart\ beat_heart\ disease_heart\ rate_icon.png");
+    background: url("./heart.png");
     width: 100px;
     height: 100px;
     position: absolute;
@@ -27,6 +27,7 @@ span{
     pointer-events: none;
     animation: animate 7s linear;
 }
+
 @keyframes animate {
     0%{
         transform: translateX(-50%) translateY(-50%);
@@ -38,15 +39,4 @@ span{
         opacity: 0;
         filter: hue-rotate(720deg)
     }
-}
-.blob{
-    background-color: white;
-    width: 200px;
-    height: 200px;
-    border-radius: 1000px;
-    position: absolute;
-    z-index: 99;
-    display: inline;
-    transform: translateX(-50%) translateY(-50%);
-
 }

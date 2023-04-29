@@ -1,0 +1,26 @@
+body{
+    background-color: lightgray;
+    height: 100vh;
+}
+.balls{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: url("./circle-solid.svg");
+
+
+}
+#one{
+    transform: translate(-300%, -250%);
+    background-color: red;
+}
+#two{
+    transform: translate(-50%, 250%);
+    background-color: blue;
+}
+#three{
+    transform: translate(150%, -150%);
+    background-color: green;
+}

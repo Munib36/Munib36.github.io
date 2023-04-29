@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+canvas{
+    background: url("./istockphoto-988670090-612x612.jpg");
+    opacity: 0.8;
+}
+#boat{
+
+    width: 40px;
+    height: 100px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+#boat > img{
+    width: 40px;
+    height: 100px;
+    object-fit: cover;
+    z-index: 1;
+
+}
+#paddle{
+    width: 40px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+#paddle > img{
+    width: 40px;
+    height: 120px;
+
+    z-index: 2;
+}
