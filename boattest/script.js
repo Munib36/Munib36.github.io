@@ -1,3 +1,4 @@
+const body = document.querySelector("body")
 const canvas = document.querySelector("canvas");
 canvas.style.width = window.innerWidth + "px"
 canvas.style.height = window.innerHeight + "px"
@@ -46,7 +47,28 @@ let y2;
 let running = false;
 let currentX = 0;
 let currentY = 0;
-canvas.addEventListener("mousedown", (event) => {
+window.addEventListener("keydown", (key) => {
+    
+    console.log(key.key)
+    if(key.key == "w"){
+        currentY -= 1;
+        canvas.style.top = currentY*unit + "px"
+        console.log(key)
+    }else if(key.key == "a"){
+        currentX -= 1;
+        canvas.style.left = currentX*unit + "px"
+        console.log(key)
+    }else if(key.key == "s"){
+        currentY += 1;
+        canvas.style.top = currentY*unit + "px"
+        console.log(key)
+    }else if(key.key == "d"){
+        currentX += 1;
+        canvas.style.left = currentX*unit + "px"
+        console.log(key)
+    }
+})
+body.addEventListener("mousedown", (event) => {
     running = true;
     if(running){
         const x = event.clientX;
@@ -59,7 +81,7 @@ canvas.addEventListener("mousedown", (event) => {
 
 })
 
-canvas.addEventListener("mousemove", (event) => {
+body.addEventListener("mousemove", (event) => {
     if(running){
         const x = event.clientX;
         const y = event.clientY;
@@ -74,8 +96,6 @@ canvas.addEventListener("mousemove", (event) => {
         y2 = y;
         let differenceY = y2 - y1;
         currentY += differenceY;
-        console.log(y1 + "one")
-        console.log(y2)
         canvas.style.top = currentY/unit + "px"
 
     }else{
@@ -84,7 +104,7 @@ canvas.addEventListener("mousemove", (event) => {
     }
     
 })
-canvas.addEventListener("mouseup", () => {
+body.addEventListener("mouseup", () => {
     running = false;
     canvas.style.cursor = "default"
 })

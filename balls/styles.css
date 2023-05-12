@@ -2,25 +2,54 @@ body{
     background-color: lightgray;
     height: 100vh;
 }
-.balls{
+.circle{
+    background-color: white;
+
+    border-radius: 1000px;
+    width: 6px;
+    height: 6px;
+
     position: absolute;
+
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 30px;
-    height: 30px;
-    background: url("./circle-solid.svg");
+}
+.circle1{
+
+    top: 90%;
+    left: 90%;
+}
+.circle2{
+
+    top: 10%;
+    left: 10%;
+}
+.circle3{
 
 
+    top: 10%;
+    left: 90%;
 }
-#one{
-    transform: translate(-300%, -250%);
-    background-color: red;
+.circle4{
+
+
+    top: 90%;
+    left: 10%;
 }
-#two{
-    transform: translate(-50%, 250%);
-    background-color: blue;
+.box{
+    background-color: transparent;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    animation: rotate 1.3s linear 0s infinite;
 }
-#three{
-    transform: translate(150%, -150%);
-    background-color: green;
+@keyframes rotate{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
 }

@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(186, 73, 73);
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Verdana';
+}
+.navbar{
+    height: 60px;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    grid-template-rows: 1fr;
+
+    width: 620px;
+    align-items: center;
+}
+.navbrand{
+    background-color: blue;
+    color: white;
+}
+.navbrand > p > img{
+    height: 20px;
+    margin: 0px 4px 0px 0px;
+}
+.navbrand > p{
+    display: inline;
+    margin: 0px;
+    font-size: 20px;
+}
+.navbuttons{
+    
+}
+.navbuttons > button{
+    
+}
+
+
+
+
+
+.loadingbar{
+    background-color: rgb(167, 66, 66);
+    width: 100%;
+}
+.loadedbar{
+    top: 60px;
+    background-color: white;
+    width: 10%;
+}
