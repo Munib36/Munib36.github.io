@@ -11,6 +11,13 @@ const g = 1.6;
 function clearCanvas(){
     ctx.fillStyle = "lightblue";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+
+    ctx.fillStyle = "lime";
+    ctx.fillRect(0, canvas.height-5, canvas.width, 5);
+
+    ctx.strokestyle = "lightgray";
+    ctx.strokeRect(0, canvas.height-5, canvas.width, 10);
 }
 function gravity(){
     sp += g;
@@ -27,8 +34,8 @@ let running = false;
 let count = 0;
 window.addEventListener("keydown", (event) => {
     sp -= 40;
-    running = true;
     if (count == 0){
+        running = true;
         main();
         count++;
     }
@@ -44,6 +51,7 @@ let ran = 50;
 let ran1 = Math.round(Math.random() * 100) + 50;
 let ran2 = Math.round(Math.random() * 100) + 50;
 let ran3 = Math.round(Math.random() * 100) + 50;
+let gap = 100;
 function drawPillar1(){
     //top pillar
     ctx.fillStyle = "lime";
@@ -54,10 +62,10 @@ function drawPillar1(){
 
     //bottom pillar
     ctx.fillStyle = "lime";
-    ctx.fillRect(xp1, ran1+100, 60, canvas.width);
+    ctx.fillRect(xp1, ran1+gap, 60, canvas.width);
     //outline
     ctx.strokestyle = "black";
-    ctx.strokeRect(xp1, ran1+100, 60, canvas.width);
+    ctx.strokeRect(xp1, ran1+gap, 60, canvas.width);
 }
 function drawPillar2(){
     ctx.fillStyle = "green";
@@ -68,10 +76,10 @@ function drawPillar2(){
 
     //bottom pillar
     ctx.fillStyle = "green";
-    ctx.fillRect(xp2, ran2+100, 60, canvas.width);
+    ctx.fillRect(xp2, ran2+gap, 60, canvas.width);
     //outline
     ctx.strokestyle = "black";
-    ctx.strokeRect(xp2, ran2+100, 60, canvas.width);
+    ctx.strokeRect(xp2, ran2+gap, 60, canvas.width);
 }
 function drawPillar3(){
     ctx.fillStyle = "blue";
@@ -82,10 +90,10 @@ function drawPillar3(){
 
     //bottom pillar
     ctx.fillStyle = "blue";
-    ctx.fillRect(xp3, ran3+100, 60, canvas.width);
+    ctx.fillRect(xp3, ran3+gap, 60, canvas.width);
     //outline
     ctx.strokestyle = "black";
-    ctx.strokeRect(xp3, ran3+100, 60, canvas.width);
+    ctx.strokeRect(xp3, ran3+gap, 60, canvas.width);
 }
 function movePillar(){
     let spp = 2;
@@ -115,20 +123,151 @@ setInterval(() => {
         addScore();
     }
 }, 100);
+function isCollision(){
+    // 1st pillar
+        // cornor #1
+        const para11 = x >= xp1 && x <= xp1 + 60;
+        if (para11){
+            let para1 = y >= 0 && y <= ran1;
+            let para2 = y >= ran1 + gap && y <= canvas.height;
+            if (para1 == true || para2 == true){
+                running = false;
+            }
+        }
 
-function main(){
-    setTimeout(function onTick10() {
-        clearCanvas();
-        gravity();
-        drawBird();
-        drawPillar1();
-        drawPillar2();
-        drawPillar3();
-        movePillar();
+        // cornor #2
+        const para21 = x+20 >= xp1 && x+20 <= xp1 + 60;
+        if (para21){
+            let para1 = y >= 0 && y <= ran1;
+            let para2 = y >= ran1 + gap && y <= canvas.height;
+            if (para1 == true || para2 == true){
+                running = false;
+            }
+        }
 
+        // cornor #3
+        const para31 = x+20 >= xp1 && x+20 <= xp1 + 60;
+        if (para31){
+            let para1 = y+20 >= 0 && y+20 <= ran1;
+            let para2 = y+20 >= ran1 + gap && y+20 <= canvas.height;
+            if (para1 == true || para2 == true){
+                running = false;
+            }
+        }
 
-        main();
-    }, 10)
+        // cornor #4
+        const para41 = x >= xp1 && x <= xp1 + 60;
+        if (para41){
+            let para1 = y+20 >= 0 && y+20 <= ran1;
+            let para2 = y+20 >= ran1 + gap && y+20 <= canvas.height;
+            if (para1 == true || para2 == true){
+                running = false;
+            }
+        }
+
+    // 2nd pillar
+        // cornor #1
+        const para12 = x >= xp2 && x <= xp2 + 60;
+        if (para12){
+            let para1 = y >= 0 && y <= ran2;
+            let para2 = y >= ran2 + gap && y <= canvas.height;
+            if (para1 == true || para2 == true){
+                running = false;
+            }
+        }
+    
+        // cornor #2
+        const para22 = x+20 >= xp2 && x+20 <= xp2 + 60;
+        if (para22){
+            let para1 = y >= 0 && y <= ran2;
+            let para2 = y >= ran2 + gap && y <= canvas.height;
+            if (para1 == true || para2 == true){
+                running = false;
+            }
+        }
+    
+        // cornor #3
+        const para32 = x+20 >= xp2 && x+20 <= xp2 + 60;
+        if (para32){
+            let para1 = y+20 >= 0 && y+20 <= ran2;
+            let para2 = y+20 >= ran2 + gap && y+20 <= canvas.height;
+            if (para1 == true || para2 == true){
+                running = false;
+            }
+        }
+    
+        // cornor #4
+        const para42 = x >= xp2 && x <= xp2 + 60;
+        if (para42){
+            let para1 = y+20 >= 0 && y+20 <= ran2;
+            let para2 = y+20 >= ran2 + gap && y+20 <= canvas.height;
+            if (para1 == true || para2 == true){
+                running = false;
+            }
+        }
+    
+    // 3rd pillar
+        // cornor #1
+        const para13 = x >= xp3 && x <= xp3 + 60;
+        if (para13){
+            let para1 = y >= 0 && y <= ran3;
+            let para2 = y >= ran3 + gap && y <= canvas.height;
+            if (para1 == true || para2 == true){
+                running = false;
+            }
+        }
+    
+        // cornor #2
+        const para23 = x+20 >= xp3 && x+20 <= xp3 + 60;
+        if (para23){
+            let para1 = y >= 0 && y <= ran3;
+            let para2 = y >= ran3 + gap && y <= canvas.height;
+            if (para1 == true || para2 == true){
+                running = false;
+            }
+        }
+    
+        // cornor #3
+        const para33 = x+20 >= xp3 && x+20 <= xp3 + 60;
+        if (para33){
+            let para1 = y+20 >= 0 && y+20 <= ran3;
+            let para2 = y+20 >= ran3 + gap && y+20 <= canvas.height;
+            if (para1 == true || para2 == true){
+                running = false;
+            }
+        }
+    
+        // cornor #4
+        const para43 = x >= xp3 && x <= xp3 + 60;
+        if (para43){
+            let para1 = y+20 >= 0 && y+20 <= ran3;
+            let para2 = y+20 >= ran3 + gap && y+20 <= canvas.height;
+            if (para1 == true || para2 == true){
+                running = false;
+            }
+        }
+
+    // floor
+    if(y < 0 || y+20 > canvas.height){
+        running = false;
+        console.log('penis')
+    }
 }
-
-
+function main(){
+    if(running){
+        setTimeout(function onTick10() {
+            clearCanvas();
+            gravity();
+            drawBird();
+            drawPillar1();
+            drawPillar2();
+            drawPillar3();
+            movePillar();
+    
+            isCollision();
+    
+    
+            main();
+        }, 10)
+    }
+}
