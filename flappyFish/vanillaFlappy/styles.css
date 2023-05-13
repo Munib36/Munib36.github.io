@@ -7,13 +7,3 @@ body{
 canvas{
     border: 1px black solid;
 }
-button{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    width: 100%;
-
-    background-color: rgba(255, 0, 0, 0.123);
-}
