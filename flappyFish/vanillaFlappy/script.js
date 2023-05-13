@@ -35,7 +35,7 @@ let count = 0;
 window.addEventListener("keydown", (event) => {
     click();
 })
-window.addEventListener("click", click)
+document.body.addEventListener("click", click)
 
 function click(){
     sp -= 40;
