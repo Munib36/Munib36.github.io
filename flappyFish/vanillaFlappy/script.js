@@ -7,7 +7,7 @@ ctx.beginPath();
 let x = 30;
 let y;
 let sp = 100;
-const g = 1.6;
+const g = 1.2;
 function clearCanvas(){
     ctx.fillStyle = "lightblue";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -24,7 +24,7 @@ function gravity(){
 }
 function drawBird(){
     y = sp;
-    ctx.fillStyle = "yellow";
+    ctx.fillStyle = "steelblue";
     ctx.fillRect(x, y, 20, 20);
 
     ctx.strokestyle = "black";
@@ -33,14 +33,18 @@ function drawBird(){
 let running = false;
 let count = 0;
 window.addEventListener("keydown", (event) => {
+    click();
+})
+window.addEventListener("click", click)
+
+function click(){
     sp -= 40;
     if (count == 0){
         running = true;
         main();
         count++;
     }
-})
-
+}
 
 //pillars
 let pillars = []
