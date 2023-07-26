@@ -1,0 +1,27 @@
+:root{
+    --primary-color: rgb(186, 73, 73);
+    --primary-light: #ffffff33;
+    --primary-dark: rgb(167, 66, 66);
+}
+.main{
+    background-color: var(--primary-light);
+    width: 480px;
+    height: 312px;
+
+    margin-top: 100px;
+    border-radius: 3px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px max-content 120px;
+
+
+
+}
+.mainbutton button{
+    color: var(--primary-light);
+    border: none;
+    font-size: 22px;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 12px;
+}
