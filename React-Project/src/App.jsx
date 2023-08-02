@@ -1,50 +1,19 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react"
 
+//* components
+import Img from "./components.jsx"
+import Title from "./components.jsx"
+import Buttons from "./components.jsx"
+import Desc from "./components.jsx"
+import Socials from "./components.jsx"
 
-function Navbar() {
-	return(
-		<nav className="navbar">
-			<img src={reactLogo} alt="" /> 
-			<p className='nav-title'>ReactFacts</p>
-			<p className="second">
-				React Course - Project 9m
-			</p>
-		</nav>
-	)
-}
-function Main() {
-	return(
-		<main>
-			<h1>Fun fax abt React</h1>
-			<ul>
-				<li>agustus</li>
-				<li>munib is learning it</li>
-				<li>maintain by fusbook</li>
+import "./App.css"
 
-			</ul>
-		</main>
-	)
-}
-function Footer() {
+//^ App
+export function App(){
 	return(
 		<div>
-			<p>
-				@ Boniph Sondak 2030, Some rights reserved
-			</p>
+			<h1>test</h1>
 		</div>
 	)
 }
-
-function App() {
-	return (
-		<>
-			<Navbar />
-			<Main />
-			<Footer />
-		</>
-	)
-}
-
-export default App

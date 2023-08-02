@@ -1,11 +1,3 @@
-.navbar{
-    display: flex;
-    
-}
-.nav-title{
-    font-weight: bold;
-    color: 
-}
-.navbar .second{
-    margin-left: auto;
+body{
+    background-color: red;
 }
