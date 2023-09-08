@@ -79,10 +79,10 @@ main img{
     border-right: 45vw solid transparent;
     
 
-    border-bottom: 100px solid var(--blue);
+    border-bottom: 9vw solid var(--red);
 
     position: inherit;
-    top: -100px;
+    top: -8.8vw;
 }
 .whatpage{
     text-align: left;
