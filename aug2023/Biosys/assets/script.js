@@ -1,6 +1,7 @@
 let opacity = 1;
 let y = window.pageYOffset;
 let circle = document.getElementById("circle")
+let triangle = document.getElementById("triangle")
 
 if(y > 400){
     opacity = 0;
@@ -18,8 +19,10 @@ window.addEventListener("scroll",()=>{
     }else{
         opacity = 1 - (y/400);
         circle.style.opacity = opacity;
+        
     }
 })
+
 
 
 
