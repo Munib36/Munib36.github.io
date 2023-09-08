@@ -10,7 +10,7 @@ body{
     margin: 0px;
     margin-bottom: 500px;
 
-    font-family: fantasy;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*& Background picture */
@@ -120,7 +120,7 @@ main img{
 }
 .whatpagediv3{
     color: var(--red);
-    
+
 }
 
 /*& CONTACTS */
