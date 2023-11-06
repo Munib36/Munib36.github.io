@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "predeploy": "npm run build",
++ "deploy": "gh-pages -d build",
+  "homepage": "https://munib36.github.io/my%20travel%20journal",
+    
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -21,6 +25,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.0.0",
     "vite": "^4.4.5"
   }
 }
