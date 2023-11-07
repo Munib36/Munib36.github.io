@@ -6,49 +6,56 @@ let svgX = "http://www.w3.org/2000/svg"
 
 function Card(item){
     return(
-        <div className="card">
-            <div className="card-img">
-                <img className="img" src={item.imageLink} />
-            </div>            
-				
-            <div className="card-text">
-				<div className="text-top">
-				    <p className="one">
-                        <svg xmlns={svgX} height="1em" viewBox="0 0 384 512">
-                            <path d={pathSvg}/>
-                        </svg>
-                        {item.country}
-                        <a href={item.mapsLink} className="muted-text">
-								view on google maps
-				        </a>
-				    </p>
-                    <p className="two">{item.place}</p>
-				    <p className="three">{item.startDate} - {item.endDate}</p>
-				</div>
-				<div className="text-bot">
-				    <p>
-				        {item.desc}
-				    </p>
-				</div>
-					
+            <div className="card">
+                <div className="card-img">
+                    <img className="img" src={item.imageLink} />
+                </div>            
+
+                <div className="card-text">
+                    <div className="text-top">
+                        <p className="one">
+                            <svg xmlns={svgX} height="1em" viewBox="0 0 384 512">
+                                <path d={pathSvg}/>
+                            </svg>
+                            {item.country}
+                            <a href={item.mapsLink} target="_blank" className="muted-text">
+                                    view on google maps
+                            </a>
+                        </p>
+                        <p className="two">{item.place}</p>
+                        <p className="three">{item.startDate} - {item.endDate}</p>
+                    </div>
+                    <div className="text-bot">
+                        <p>
+                            {item.desc}
+                        </p>
+                    </div>
+
+                </div>
             </div>
-        </div>
+            
+        
     )
 }
-
+let i = 0;
 let cards = Data.map(item => {
+    i++;
     return(
-        <Card 
-            key={item.key}
-            imageLink={item.imageLink}
-            country={item.country}
-            mapsLink={item.mapsLink}
-            place={item.place}
-            startDate={item.startDate}
-            endDate={item.endDate}
-            desc={item.desc}
-        />
+        <>
+            <Card 
+                key={item.id}
+                imageLink={item.imageLink}
+                country={item.country}
+                mapsLink={item.mapsLink}
+                place={item.place}
+                startDate={item.startDate}
+                endDate={item.endDate}
+                desc={item.desc}
+            />
+            {Data.length == i ? "" : <hr/>}
+        </>
     )
+    
 })
 
 
@@ -56,6 +63,7 @@ export default function Hero(){
     return(
         <div className="main">
             {cards}
+            
         </div>
     )
 }

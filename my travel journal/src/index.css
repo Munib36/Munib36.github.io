@@ -128,7 +128,12 @@
 .footer > p{
 
 }
-
+.footerName{
+    color: white;
+    padding-left: 2px;
+    letter-spacing: 0.1em;
+    
+}
 
 
 @media(max-width: 795px){
@@ -153,4 +158,7 @@
     margin-right: 5px;
 }
 
-svg{fill:#d92020}
+svg{
+    fill:#d92020;
+    padding: 0px 3px;
+}

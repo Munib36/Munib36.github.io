@@ -8,7 +8,10 @@ export default function Footer(){
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                     <path d={pathSvg}/>
                 </svg>
-				by Munib Sondak.
+                by
+                <a className="footerName" href="https://munib36.github.io">
+                    Munib Sondak.
+                </a>
 			</p>
 		</div>
     ) 

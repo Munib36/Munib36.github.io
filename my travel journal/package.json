@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "predeploy": "npm run build",
-+ "deploy": "gh-pages -d build",
+  "deploy": "gh-pages -d build",
   "homepage": "https://munib36.github.io/my%20travel%20journal",
     
   "scripts": {
