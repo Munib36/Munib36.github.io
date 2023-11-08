@@ -6,9 +6,9 @@
 - [Overview Of Projects](# Overview of Projects)
 
 - [Detailed Overviews](# Detailed Overviews)
- - [My Travel journal](https://munib36.github.io/mytraveljournal)
- - [Photography](https://google.com)
- - [Allah Name](https://munib36.github.io/allahName)
+  - [My Travel journal](https://munib36.github.io/mytraveljournal/README.md)
+  - [Photography](https://google.com)
+  - [Allah Name](https://munib36.github.io/allahName)
 
 
 
