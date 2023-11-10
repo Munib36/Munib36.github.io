@@ -38,7 +38,7 @@ body{
     left: 5%;
     right: 5%;
     width: 90vw;
-    bottom: 0;
+    height: 500px;
     
     z-index: 2;
     
@@ -76,4 +76,30 @@ body{
 
     position: inherit;
     top: -10vw;
+}
+
+
+.bottomtriangle1{
+    position: absolute;
+    bottom: -9vw;
+    left: 0px;
+    
+    background-color: transparent;
+
+    border-left: 0 solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 10vw solid steelblue;
+}
+
+.bottomtriangle2{
+    position: absolute;
+    bottom: -9vw;
+    right: 0px;
+    
+    
+    background-color: transparent;
+
+    border-left: 50vw solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 10vw solid steelblue;
 }
