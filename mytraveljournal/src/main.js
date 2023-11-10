@@ -3,8 +3,14 @@ import ReactDOM from 'react-dom';
 import App from './App.jsx';
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('body')).render(
+const rootElement = document.getElementById('body');
+const root = ReactDOM.createRoot(rootElement);
+
+root.render(
   <React.StrictMode>
+    <div>
       <App />
-  </React.StrictMode>
+    </div>
+  </React.StrictMode>,
+  rootElement
 );
