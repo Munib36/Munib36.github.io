@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>Saddam Hussein by munib</title>
+
+		<style>
+			.saddam{
+				position: fixed;
+				top: 100px;
+				left: 10px;
+
+				height: 140px;
+			}
+			.back{
+				height: 500px;
+				
+				aspect-ratio: 16/9;
+				
+				object-fit: ;
+			}
+			.back-container{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				width: 100%;
+				height: 100vh;
+			}
+			</style>
+	</head>
+
+	<body>
+		
+		<img id="saddam" class="saddam" src="./saddam.jpg"/>
+
+		<div class="back-container">
+			
+		
+			<img class="back" src="./back.jpg"/>
+		</div>
+
+
+
+		<script>
+			let saddam = document.getElementById("saddam");
+			saddam.style.top = "100px"
+
+			let y = 100;
+			let x = 10;
+			let degrees = 0;
+			document.addEventListener('keydown', (event) => {
+				var name = event.key;
+				var code = event.code;
+				// Alert the key name and key code on keydown
+				
+
+				let sdm = saddam.style;
+
+
+				switch(name){
+					case "w":
+						y = y - 18;
+						sdm.top = y + "px";
+						
+					break;
+					case"s":
+						y = y + 18;
+						sdm.top = y + "px";
+					break;
+					case"d":
+						x = x + 18;
+						sdm.left = x + "px";
+					break;
+					case"a":
+						x = x - 18;
+						sdm.left = x + "px";
+					break;
+						
+					case"q":
+						
+						degrees = degrees - 15;
+						sdm.transform = `rotateZ(${degrees}deg)`
+					break;
+					case"e":
+						
+						degrees = degrees + 15;
+						sdm.transform = `rotateZ(${degrees}deg)`
+					break;
+					
+					
+				}
+				
+			}, false);
+		</script>
+	</body>
+
+</html>
