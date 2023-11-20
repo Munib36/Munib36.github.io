@@ -9,7 +9,7 @@
   - [My Travel journal](https://munib36.github.io/mytraveljournal/README.md)
   - [Photography](https://google.com)
   - [Allah Name](https://munib36.github.io/allahName)
-  - [Saddam Hussein](https://munib36.github.io/au2023/saddam)
+  - [Saddam Hussein](https://munib36.github.io/aug2023/saddam.html)
 - 
   - ![!](./mytraveljournal/public/Screenshot.png)
   
