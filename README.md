@@ -10,6 +10,6 @@
   - [Photography](https://google.com)
   - [Allah Name](https://munib36.github.io/allahName)
   - [Saddam Hussein](https://munib36.github.io/aug2023/saddam.html)
-s 
+ 
    ![!](./mytraveljournal/public/Screenshot.png)
   
