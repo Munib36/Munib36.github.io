@@ -9,6 +9,7 @@ let date = new Date;
 let currentDate = date.toJSON()
 currentDate = currentDate.slice(0, 10)
 export default function App() {
+
     const [notes, setNotes] = React.useState([])
     const [currentNoteId, setCurrentNoteId] = React.useState(
         (notes[0]?.id) || ""
@@ -17,6 +18,8 @@ export default function App() {
     const currentNote = 
         notes.find(note => note.id === currentNoteId) 
         || notes[0]
+    let notesSorted = notes.sort((a, b) => b.updatedAt - a.updatedAt)
+    let sortedNotes = notes.sort((a, b) => b.updatedAt - a.updatedAt)
 
     React.useEffect(() => {
         const unsubscribe = onSnapshot(notesCollection, function(snapshot) {
@@ -47,7 +50,6 @@ export default function App() {
         let object = {
             body: text,
             updatedAt: Date.now(),
-            normalupdatedAt: currentDate,
         }
         const docRef = doc(db, "notes", currentNoteId)
         await setDoc(docRef, object, { merge: true })
@@ -70,7 +72,7 @@ export default function App() {
                         className="split"
                     >
                         <Sidebar
-                            notes={notes}
+                            notes={sortedNotes}
                             currentNote={currentNote}
                             setCurrentNoteId={setCurrentNoteId}
                             newNote={createNewNote}
