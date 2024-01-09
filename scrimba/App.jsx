@@ -14,6 +14,16 @@ export default function App() {
     const [currentNoteId, setCurrentNoteId] = React.useState(
         (notes[0]?.id) || ""
     )
+    const [ tempNotesText, setTempNotesText ] = React.useState("")
+        /**
+     * Challenge:
+     * 3. Create a useEffect that, if there's a `currentNote`, sets
+     *    the `tempNoteText` to `currentNote.body`. (This copies the
+     *    current note's text into the `tempNoteText` field so whenever 
+     *    the user changes the currentNote, the editor can display the 
+     *    correct text.
+     * 4. TBA
+     */
     
     const currentNote = 
         notes.find(note => note.id === currentNoteId) 
@@ -33,12 +43,16 @@ export default function App() {
         })
         return unsubscribe
     }, [])
+    React.useEffect(()=>{
+        if(currentNote){
+            setTempNotesText(currentNote.body)
+        }
+    }, [currentNote])
 
     async function createNewNote() {
         const newNote = {
             body: "# Type your markdown note's title here",
-            normalcreatedAt: currentDate,
-            normalupdatedAt: currentDate,
+
             createdAt: Date.now(),
             updatedAt: Date.now(),
         }
@@ -53,6 +67,8 @@ export default function App() {
         }
         const docRef = doc(db, "notes", currentNoteId)
         await setDoc(docRef, object, { merge: true })
+        // setTempNoteText(text)
+        
     }
 
     async function deleteNote(event, noteId) {
@@ -80,8 +96,8 @@ export default function App() {
                         />
                     
                         <Editor
-                            currentNote={currentNote}
-                            updateNote={updateNote}
+                            tempNotesText={tempNotesText}
+                            setTempNotesText={setTempNotesText}
                         />
                         
                     </Split>
