@@ -1,0 +1,62 @@
+
+/* ! TITLE COMPONENT */
+.Title{
+  width: 100%;
+}
+.Title h2{
+  font-size: calc(10px + 1.3vw);
+}
+.Title p{
+  padding: 0px 5%;
+  font-size: calc(8px + 0.75vw);
+}
+
+/* ! DICE COMPONENT */
+.Dice{
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content min-content;
+  grid-template-rows: min-content min-content;
+  gap: 5%;
+
+  padding: 20px 0px;
+}
+.Dice > button {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  aspect-ratio: 1/1;
+  width: min-content;
+  text-align: center;
+}
+.Dice > button:hover{
+  background-color: lightgray;
+  cursor: pointer;
+}
+.Dice > button:active{
+  background-color: #59E391;
+}
+
+
+/* ! BUTTON COMPONENT */
+.Button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.Button > button{
+  background-color: #5035FF;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+}
+.Button > button:hover{
+  background-color: #4128e0;
+  cursor: pointer;
+}
+.Button > button:active{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
