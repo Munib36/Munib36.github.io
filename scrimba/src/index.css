@@ -75,7 +75,7 @@ main {
   width: min-content;
   border-radius: 20px;
   aspect-ratio: 1/1;
-  height: 80vmin;
+  width: 80vmin;
 
   
   display: flex;
@@ -83,6 +83,6 @@ main {
 
   text-align: center;
 
-  padding: 20px;
+  padding: 6vmin;
 }
 

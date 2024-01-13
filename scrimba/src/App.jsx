@@ -1,5 +1,21 @@
+
 import Die from "./components/Die"
 import "./app.css"
+import { useState } from "react";
+
+const [ diceArray, setDiceArray ] = useState([
+	{on: false, value: 1},
+	{on: false, value: 1},
+	{on: false, value: 1},
+	{on: false, value: 1},
+	{on: false, value: 1},
+	
+	{on: false, value: 1},
+	{on: false, value: 1},
+	{on: false, value: 1},
+	{on: false, value: 1},
+	{on: false, value: 1},
+])
 
 
 function Title(){
@@ -29,13 +45,32 @@ function Dice(){
   )
 }
 
+
+
 function Button(){
   return(
     <div className="Button">
-      <button>Roll</button>
+      <button onClick={allNewDice}>Roll</button>
     </div>
   )
 }
+
+function ranNum(){
+	return Math.ceil(Math.random()*6)
+}
+
+function allNewDice(){
+
+	for(let i = 0; i < 10; i++){
+		
+		diceArray[i].value = ranNum();
+	}
+	
+	console.log(diceArray)
+}
+
+
+
 
 
 
