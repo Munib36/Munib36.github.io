@@ -20,20 +20,6 @@ function Title() {
 	)
 }
 
-function Dice(props) {
-	let dices = props.diceArray.map(x => {
-		return(
-			<button className={x.on === true ? "active" : ""}>{x.value}</button>
-		)
-	})
-	return ( 
-		<div className="Dice" >
-			{dices}
-		</div>
-	)
-}
-
-
 
 function Button(props) {
 	return ( 
@@ -51,20 +37,22 @@ function Button(props) {
 
 export default function App() {
 	const [diceArray, setDiceArray] = useState([
-		{on: true, value: 1},
-		{on: false, value: 1},
-		{on: false, value: 1},
-		{on: false, value: 1},
-		{on: false, value: 1},
-		
-		{on: false, value: 1},
-		{on: false, value: 1},
-		{on: false, value: 1},
-		{on: false, value: 1},
-		{on: false, value: 1}
+		{on: true, value: 1, id: 1},
+		{on: false, value: 1, id: 2},
+		{on: false, value: 1, id: 3},
+		{on: false, value: 1, id: 4},
+		{on: false, value: 1, id: 5},
+
+		{on: false, value: 1, id: 6},
+		{on: false, value: 1, id: 7},
+		{on: false, value: 1, id: 8},
+		{on: false, value: 1, id: 9},
+		{on: false, value: 1, id: 10},
+
 	])
 
-	
+
+
 	function allNewDice() {	
 		setDiceArray(prevDice => {
 			return prevDice.map(x => { 
@@ -80,13 +68,39 @@ export default function App() {
 	}
 
 
+
+	function toggle(id) {	
+        setDiceArray(prevDice => {
+            return prevDice.map(die =>{
+                return (die.id === id ? {...die, on: !die.on} : die)
+                
+            })
+        })
+
+
+	}
+
+	let dices = diceArray.map(x => {
+		return(
+			<Die 
+				key={x.id}
+				id={x.id}
+				on={x.on}
+				value={x.value}
+
+				handleClick={toggle}
+			/>
+		)
+	})
+
+
+
 	return ( 
 		<main>
 			<Title />
-			<Dice 
-				diceArray={diceArray}
-				handleClick={changeDieToggle}
-			/>
+			<div className="Dice">
+				{dices}
+			</div>
 			<Button 
 				handleClick={allNewDice}
 			/>
