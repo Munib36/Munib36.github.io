@@ -37,6 +37,9 @@
   cursor: pointer;
 }
 .Dice > button:active{
+  background-color: #4cca7e;
+}
+.Dice .active{
   background-color: #59E391;
 }
 
