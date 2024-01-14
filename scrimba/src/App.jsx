@@ -64,7 +64,7 @@ export default function App() {
 		{on: false, value: 1}
 	])
 
-
+	
 	function allNewDice() {	
 		setDiceArray(prevDice => {
 			return prevDice.map(x => { 
@@ -85,6 +85,7 @@ export default function App() {
 			<Title />
 			<Dice 
 				diceArray={diceArray}
+				handleClick={changeDieToggle}
 			/>
 			<Button 
 				handleClick={allNewDice}
