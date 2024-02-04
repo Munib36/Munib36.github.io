@@ -33,3 +33,44 @@ span{
         filter: hue-rotate(1300deg);
     }
 }
+
+audio{
+    z-index: -9;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.warning{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+
+    z-index: 999;
+
+    font-size: 99px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+
+    transition: all 500ms;
+}

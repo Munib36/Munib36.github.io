@@ -2,11 +2,6 @@ let body = document.getElementById("body")
 let xPos;
 let yPos;
 
-
-
-
-
-
 //! BACKGROUND
 setInterval( () => {
 
@@ -26,9 +21,6 @@ setInterval( () => {
     }, 7000);
 
 }, 50);
-
-
-
 
 
 //! MOUSE
@@ -53,7 +45,6 @@ body.addEventListener("mousemove", (event)=>{
     }, 3000)
 })
 
-
 setInterval(() => {
     let heart = document.createElement("span")
     heart.style.left = xPos + "px";
@@ -71,18 +62,18 @@ setInterval(() => {
 
 }, 100);
 
+body.addEventListener("click", ()=>{
+    document.querySelector("audio").play();
+    log("works")
+})
 
+body.addEventListener("click", begin)
 
-
-
-
-
-
-
-
-
-
-
+function begin(){
+    document.querySelector(".warning").style.left = 100 + "%";
+    document.querySelector(".warning").innerText = ""
+    body.removeEventListener("click", begin)
+}
 
 
 
