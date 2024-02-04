@@ -64,7 +64,6 @@ setInterval(() => {
 
 body.addEventListener("click", ()=>{
     document.querySelector("audio").play();
-    log("works")
 })
 
 body.addEventListener("click", begin)
