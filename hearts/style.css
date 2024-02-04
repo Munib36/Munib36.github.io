@@ -66,9 +66,8 @@ audio{
 
     z-index: 999;
 
-    font-size: 99px;
+    font-size: 120px;
     font-family: "Minecraft";
-    color: white;
     pointer-events: none;
     display: flex;
     justify-content: center;
@@ -76,4 +75,11 @@ audio{
     padding-bottom: 50px;
 
     transition: all 500ms;
+
+}
+.warning p{
+    background: linear-gradient(0deg, #40c9ff, #e81cff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
