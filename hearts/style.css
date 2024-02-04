@@ -1,8 +1,11 @@
+@Import "./MinecraftRegular-Bmg3.otf";
+
 body{
     background-color: rgb(50, 50, 50);
     height: 100vh;
     margin: 0;
     overflow: hidden;
+    
 }
 span{
     background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-256.png");
@@ -64,7 +67,7 @@ audio{
     z-index: 999;
 
     font-size: 99px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Minecraft";
     color: white;
     pointer-events: none;
     display: flex;
