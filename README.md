@@ -6,7 +6,7 @@
 - [Detailed Overviews](# Detailed Overviews)
   - [My Travel journal](https://munib.netlify.app)
   - [Saddam Hussein](https://munib36.github.io/aug2023/saddam.html)
-  - [Biosys](https://munib36.github.io/aug2023/Biosys)
- 
-   ![!](./mytraveljournal/public/Screenshot.png)
+  - [Biosys](https://munib36.github.io/Biosys)
+  - [hearts](https://munib36.github.io/hearts)
+
   
