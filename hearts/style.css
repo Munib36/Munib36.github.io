@@ -1,4 +1,8 @@
-@Import "./MinecraftRegular-Bmg3.otf";
+@font-face {
+    font-family: 'MinecraftRegular-Bmg3';
+    src: url('./MinecraftRegular-Bmg3.otf') format('opentype');
+    /* Add additional font properties here if needed */
+}
 
 body{
     background-color: rgb(50, 50, 50);
@@ -6,6 +10,9 @@ body{
     margin: 0;
     overflow: hidden;
 
+}
+body * {
+    font-family: 'MinecraftRegular-Bmg3', sans-serif;
 }
 span{
     background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-256.png");

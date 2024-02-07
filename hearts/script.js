@@ -124,9 +124,7 @@ function begin(){
 
 
 let bloons = document.getElementsByClassName("handleClickClass")
-for(let i = 0; i < bloons.length; i++){
-    // bloons[i].addEventListener("click", popBalloon)
-}
+
 
 
 
