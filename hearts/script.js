@@ -1,8 +1,8 @@
 let body = document.getElementById("body")
-let xPos;
-let yPos;
+
 
 //! BACKGROUND
+let i = 0;
 setInterval( () => {
 
     const heart = document.createElement("span")
@@ -14,12 +14,15 @@ setInterval( () => {
     heart.style.height = ranNum + "px";
     let ranX = Math.random()*(window.innerWidth);
     heart.style.left = ranX + "px"
-    heart.style.zIndex = -1;
+    heart.style.zIndex = 1;
+
 	heart.classList.add('handleClickClass')
+	heart.addEventListener("click", popBalloon)
+
     body.appendChild(heart)
     setTimeout(() => {
         heart.remove();
-    }, 7000);
+    }, 10000);
 
 }, 50);
 
@@ -95,11 +98,11 @@ function begin(){
 
 
   const popBalloon = event => {
+	console.log(event.srcElement.style.width)
     event.stopPropagation()
     const balloon = event.target
     // balloon.classList.add('pop')
     // setTimeout(() => {
-		console.log(event)
 		pop(event)
       	deleteBalloon(balloon)
     // }, 200)
@@ -122,14 +125,14 @@ function begin(){
 
 let bloons = document.getElementsByClassName("handleClickClass")
 for(let i = 0; i < bloons.length; i++){
-    bloons[i].addEventListener("click", popBalloon)
+    // bloons[i].addEventListener("click", popBalloon)
 }
 
 
 
-if (document.body.animate) {
-	document.querySelector('#button').addEventListener('click', pop);
-  }
+// if (document.body.animate) {
+// 	document.querySelector('#button').addEventListener('click', pop);
+//   }
   
 
 
@@ -137,24 +140,24 @@ function pop (e) {
 	  for (let i = 0; i < 30; i++) {
 		//! We call the function createParticle 30 times
 		// As we need the coordinates of the mouse, we pass them as arguments
-		createParticle(e.clientX, e.clientY);
+		createParticle(e.clientX, e.clientY, (e.srcElement.style.width.slice(0, -2)));
 	  }
   }
   
-  function createParticle (x, y) {
+  function createParticle (x, y, ElSize) {
 	const particle = document.createElement('particle');
 	document.body.appendChild(particle);
 	
 	// Calculate a random size from 5px to 25px
-	const size = Math.floor(Math.random() * 20 + 5);
+	const size = Math.floor(Math.random() * (ElSize/2) + 5);
 	particle.style.width = `${size}px`;
 	particle.style.height = `${size}px`;
 	// Generate a random color in a blue/purple palette
 	particle.style.background = `hsl(${Math.random() * 90 + 180}, 70%, 60%)`;
 	
 	// Generate a random x & y destination within a distance of 75px from the mouse
-	const destinationX = x + (Math.random() - 0.5) * 2 * 75;
-	const destinationY = y + (Math.random() - 0.5) * 2 * 75;
+	const destinationX = x + (Math.random() - 0.5) * 2 * (ElSize + 10);
+	const destinationY = y + (Math.random() - 0.5) * 2 * (ElSize + 10);
   
 	// Store the animation in a variable as we will need it later
 	const animation = particle.animate([
