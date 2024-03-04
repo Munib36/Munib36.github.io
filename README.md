@@ -5,6 +5,7 @@
 
 - [Detailed Overviews](# Detailed Overviews)
   - [Portfolio](https://munib.netlify.app)
+  - [Tenzies](https://scrimba-prac.netlify.app)
   - [My Travel journal](https://munibjournal.netlify.app)
   - [Saddam Hussein](https://munib36.github.io/saddam/saddam.html)
   - [Biosys](https://munib36.github.io/Biosys)
