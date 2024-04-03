@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>munib's color picker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Lighten/Darken</h1>
+            
+        <div class="container-container">   
+            <label for="hex">hex code</label>
+            <input type="text" name="hex" id="hex" placeholder="#000000">
+            <label for="slider" id="sliderText">0%</label>
+            <input type="range" min="0" max="100" value="0" class="slider" id="slider" name="slider">
+        </div>
+        
+
+        <div class="box-color-container">
+            <p>input color</p>
+            <div id="input-color" class="box"></div>
+
+            <p>altered color</p>
+            <div id="altered-color" class="box"></div>
+        </div>
+        
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
