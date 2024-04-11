@@ -9,6 +9,8 @@ body{
     background-color: rgb(77, 77, 77);
 }
 .container{
+    width: 360px;
+
     background-color: teal;
     border: 1px solid black;
     border-top-left-radius: 20px;
@@ -58,8 +60,8 @@ label{
 }
 
 #input-color{
-    background-color: red;
+    background-color: #4A412A;
 }
 #altered-color{
-    background-color: rebeccapurple;
+    background-color: #4A412A;
 }
