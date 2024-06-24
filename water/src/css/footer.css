@@ -1,3 +1,24 @@
+@import "../constants.css";
+
 .footer{
-    background-color: 
+
+    --footer: var(--dark-blue);
+    /* background-color: var(--footer); */
+    outline: dashed 1px red;
+    height: 400px;
+    width: 100%;
+
+    position: relative;
+    bottom: 0px;
+
+}
+.footer--wave{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+    aspect-ratio: 900/300;
+
+    background-image: url("./wave.svg");
 }

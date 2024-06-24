@@ -1,0 +1,12 @@
+@import "./constants.css";
+
+body{
+    margin: 0px;
+
+}
+#root{
+    height: 3000px;
+}
+.app{
+
+}

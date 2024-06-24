@@ -4,10 +4,17 @@ import Footer from "./components/footer.jsx"
 
 
 
+
 function App() {
+    return( 
+        <div className='app'>
 
-
-    <Footer />
+        
+            <h1>hi</h1>
+            <Footer />
+            <h1>hi</h1>
+        </div>
+    )
 }
 
 export default App
