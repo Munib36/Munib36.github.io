@@ -8,10 +8,10 @@ export default function Footer(){
         <div className="footer">
             <div className="footer--wave"></div>
             <div className="footer--main">
-                <h1>hi</h1>
+                <h1>hi123</h1>
             </div>
             <div className="footer--credits">
-                <h1>hello</h1>
+                <h1>hello123</h1>
             </div>
         </div>
     )

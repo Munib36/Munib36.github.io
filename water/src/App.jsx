@@ -1,20 +1,16 @@
 import './App.css'
 
+import Nav from "./components/nav.jsx"
+import Hero from "./components/hero.jsx"
 import Footer from "./components/footer.jsx"
 
 
 
 
-function App() {
+export default function App() {
     return( 
-        <div className='app'>
-
-        
-            <h1>hi</h1>
-            <Footer />
-            <h1>hi</h1>
-        </div>
+        <>
+            <Hero />
+        </> 
     )
 }
-
-export default App

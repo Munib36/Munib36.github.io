@@ -1,1 +1,102 @@
 @import "../constants.css";
+
+
+
+
+.hero{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  grid-template-rows: 1fr;
+  width: 100%;
+
+}
+.hero--video-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue)
+}
+.video{
+  width: 100%;
+}
+.video > source{
+  width: 100%;
+}
+.hero--sidebar{
+  flex: 3;
+  background-color: var(--blue);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.hero--sidebar > .first{
+  flex: 7;
+}
+.hero--sidebar > .second{
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.circle{
+    width: 50px;
+    position: absolute;
+    bottom: 20px;
+    transform: translate(-50%, 0%);
+    left: 50%;
+
+    animation: bounce 1s ease infinite;
+    
+}
+.circle path{
+    fill: var(--black);
+}
+
+
+
+
+.show-button{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--dark-blue);
+  font-size: 1.17em;
+  cursor: pointer;
+
+  display: inline-block;
+}
+.show-button:hover{
+  transition: all 0.1s;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--black);
+  transform: translateY(-0.25em);
+}
+
+
+#ch{
+  display: none;
+}
+
+
+
+
+
+@keyframes bounce {
+  50% {
+    transform: translate(-50%, 50%);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .hero{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 350px;
+  }
+}
+@media screen and (max-width: 866px) {
+
+}
+
