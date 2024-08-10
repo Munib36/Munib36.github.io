@@ -10,6 +10,7 @@ import Footer from "./components/footer.jsx"
 export default function App() {
     return( 
         <>
+            <Nav />
             <Hero />
         </> 
     )

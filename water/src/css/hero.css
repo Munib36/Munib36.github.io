@@ -4,7 +4,7 @@
 
 
 .hero{
-  margin-top: 100px;
+
   display: grid;
   grid-template-columns: 1fr 500px;
   grid-template-rows: 1fr;
@@ -53,33 +53,19 @@
     
 }
 .circle path{
-    fill: var(--black);
+    fill: var(--dark-blue);
 }
-
-
-
-
-.show-button{
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--dark-blue);
-  font-size: 1.17em;
-  cursor: pointer;
-
-  display: inline-block;
-}
-.show-button:hover{
-  transition: all 0.1s;
-  box-shadow: 0 0.5em 0.5em -0.4em var(--black);
-  transform: translateY(-0.25em);
-}
-
 
 #ch{
   display: none;
 }
+.show-button{
+  display: none;
+}
 
+.dotdotdot{
+  display: none;
+}
 
 
 
@@ -93,10 +79,65 @@
 @media screen and (max-width: 1300px) {
   .hero{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 350px;
+    grid-template-rows: 1fr auto;
+    text-align: center;
   }
-}
-@media screen and (max-width: 866px) {
+  .hero--sidebar{
+    padding: 60px 60px;
+  }
 
+  #ch{
+    display: none;
+  }
+  .show-button{
+    display: none;
+  }
+  
+}
+
+
+#ch:checked ~ .hidden-content{
+  display: block;
+}
+#ch:checked ~ h3 .show-button:first-of-type {
+  display: none;
+}
+#ch:checked ~ h3 .dotdotdot {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 866px) {
+  .show-button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-blue);
+    font-size: 1.17em;
+    cursor: pointer;
+    margin-top: 40px;
+  
+    display: inline-block;
+  }
+  .show-button:hover{
+    transition: all 0.1s;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--black);
+    transform: translateY(-0.25em);
+  }
+  .dotdotdot{
+    display: inline-block;
+  }
+  
+  #ch{
+    display: none;
+  }
+  
+
+
+
+  .hidden-content{
+    display: none;
+  }
 }
 
