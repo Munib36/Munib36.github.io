@@ -17,7 +17,7 @@ setInterval( () => {
     heart.style.zIndex = 1;
 
 	heart.classList.add('handleClickClass')
-	heart.addEventListener("click", popBalloon)
+	heart.addEventListener("mousedown", popBalloon)
 
     body.appendChild(heart)
     setTimeout(() => {
