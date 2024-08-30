@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(129, 113, 113);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-top: 20%;
+    margin-inline: 20%
+}
