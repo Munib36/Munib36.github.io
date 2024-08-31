@@ -1,5 +1,17 @@
 @import "../constants.css";
 
 
+nav{
+    display: flex;
+    height: 40px;
+    width: 70%;
+    border: none;
+    border-radius: 20px;
 
+    position: fixed;
+    top: 0px;
+    transform: translateX(50%);
+
+    background-color: var(--teal);
+}
 
