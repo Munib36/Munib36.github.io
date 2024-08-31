@@ -1,4 +1,5 @@
 import './App.css'
+import "./resets.css"
 
 import Nav from "./components/nav.jsx"
 import Hero from "./components/hero.jsx"

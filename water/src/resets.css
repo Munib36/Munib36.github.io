@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove default link styling */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Remove default table styling */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Remove default form element styling */
+  button, input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    outline: none;
+  }
+  
+  /* Remove default image styling */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Reset box-sizing to include padding and border in element's total width and height */
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
