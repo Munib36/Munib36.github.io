@@ -1,11 +1,8 @@
 import React from "react"
 
-import {favNumber} from "./assets/HOC"
-
-function App(props) {
+export default function App() {
 
     return (
-        <h1>{props.favorite}</h1>
+        <h1>hi</h1>
     )
 }
-export default favNumber(App)
