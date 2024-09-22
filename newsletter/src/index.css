@@ -1,0 +1,181 @@
+*{
+  color: white;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 700;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.days * {
+  color: #f95e85;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+
+  
+}
+.timer{
+  display: flex;
+  width: 60%;
+}
+.time {
+  text-align: center;
+
+  border-radius: 5px;
+
+}
+
+.before-one{
+  height: 50px;
+  width: 100px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #34364f;
+  overflow: hidden;
+
+
+
+  /* animation: flip-before 2s linear forwards; */
+  transform-origin: bottom;
+
+  backface-visibility: hidden;
+
+  filter: brightness(0.8);
+  border-bottom: 1px #222334 solid;
+}
+
+.before-two{
+  height: 50px;
+  width: 100px;
+  position: relative;
+  top: 0;
+  background-color: #34364f;
+  overflow: hidden;
+
+
+}
+.before-two p{
+  transform: translateY(-50%);
+}
+
+@keyframes flip-before{
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+
+
+.after-one{
+
+  height: 50px;
+  width: 100px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #34364f;
+  filter: brightness(0.8);
+  overflow: hidden;
+
+  border-bottom: 1px solid #222334;
+}
+
+.after-two{
+  height: 50px;
+  width: 100px;
+  position: relative;
+  top: 0;
+  background-color: #34364f;
+  overflow: hidden;
+
+  /* animation: flip-after 2s linear forwards; */
+
+  transform-origin: top;
+
+  backface-visibility: hidden;
+
+}
+.after-two p{
+  transform: translateY(-50%);
+}
+@keyframes flip-after{
+  0% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+
+.before{
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.after{
+  position: absolute;
+  top: 0;
+  left: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+body{
+  background-image: url("../launch-countdown-timer-main/images/bg-stars.svg");
+  background-color: #231d2b;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../launch-countdown-timer-main/images/pattern-hills.svg");
+  background-position: center;
+  height: 197px;
+  
+
+}
+
+.footer-foot{
+  display: flex;
+  z-index: 99;
+  width: 150px;
+  justify-content: space-between;
+}
+.footer-foot svg{
+  aspect-ratio: 1/1;
+  width: 24px;
+  transition: 100ms all;
+  cursor: pointer;
+}
+.footer-foot svg:hover path{
+  fill: #f26283;
+
+}
