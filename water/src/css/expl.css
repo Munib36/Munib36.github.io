@@ -1,0 +1,21 @@
+@import "../constants.css";
+
+.Expl{
+    width: 100%;
+    height: 500px;
+
+}
+.expl-wave{
+    background-image: url("/wave1.png");
+    background-position: center top;
+    background-size: 700px 200px;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+@media screen and (min-width: 700px){
+    .expl-wave{
+        background-size: 100% 200px;
+
+    }
+}

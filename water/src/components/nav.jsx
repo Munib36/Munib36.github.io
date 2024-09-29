@@ -1,10 +1,12 @@
 import "../css/nav.css"
-import logo from "/waterlogo.png"
 
 export default function Nav(){
     return(
         <nav>
-            <img src={logo} alt="" />
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About us</a>
+            <a href="#">Why</a>
         </nav>
     )
 }
