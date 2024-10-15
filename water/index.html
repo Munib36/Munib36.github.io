@@ -5,9 +5,24 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pure Water Clean Air</title>
+    <link rel="stylesheet" href="./src/index.css">
   </head>
   <body>
-
+    <img id="overlay" class="overlay" src="./public/heroBG.png" alt="">
+    
+    
+    <svg>
+      <filter id='noiseFilter'>
+        <feTurbulence 
+          type='fractalNoise' 
+          baseFrequency='0.8' 
+          stitchTiles='stitch'/>
+        <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+            <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+            <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+      </filter>
+      
+    </svg>
 
 
 
@@ -15,5 +30,13 @@
     <div id="root"></div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      document.addEventListener("keydown", (item)=>{
+        if(item.key == "q"){
+          console.log("it worked")
+          document.getElementById("overlay").remove()
+        }
+      })
+    </script>
   </body>
 </html>

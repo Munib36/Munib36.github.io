@@ -1,0 +1,73 @@
+@import "../constants.css";
+
+.second *{
+    color: var(--black);
+    text-align: center;
+}
+
+
+.second{
+    
+    float: right;
+
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+
+    height: auto;
+    width: 60%;
+    
+    margin-top: 200px;
+    margin-right: 30px;
+    padding: 40px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.second--second{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    flex: 1;
+    
+}
+.second--second p{
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.second--second > h2{
+    color: var(--blue);
+}
+.second--image{
+    aspect-ratio: 1/1;
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* outline: 2px red dashed; */
+}
+.second--image img{
+    transform: scale(110%);
+    mix-blend-mode: multiply;
+    
+    user-drag: none;  /* For WebKit browsers (Chrome, Safari) */
+    user-select: none; /* Prevents text selection as well */
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+.highlight{
+    color: var(--blue) !important;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+a{
+    color: var(--dark-teal) !important;
+    text-decoration: none;
+    text-decoration: underline;
+}

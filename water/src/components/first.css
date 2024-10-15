@@ -1,0 +1,85 @@
+@import "../constants.css";
+.first *{
+    color: black;
+    text-align: center;
+}
+
+.first{
+
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+
+    height: auto;
+    width: 60%;
+    
+    margin-top: 200px;
+    margin-left: 30px;
+    padding: 40px 50px;
+
+
+}
+.first h2{
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+.first--first{
+    display: flex;
+    justify-content: space-evenly;
+
+    gap: 20px;
+}
+.first--first--container{
+    /* flex: 1; */
+
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px var(--blue) solid;
+    border-radius: 20px;
+    
+    padding: 10px;
+    
+
+}
+.first--first--container > h4{
+    font-size: 14px;
+}
+.container--image-container{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+
+    width: 80%;
+    aspect-ratio: 1/1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container--image-container > img{
+    height: 100px;
+    transition: 100ms transform;
+    cursor: pointer;
+    transform: scale(150%);
+
+    mix-blend-mode: multiply;
+    
+    user-drag: none;  /* For WebKit browsers (Chrome, Safari) */
+    user-select: none; /* Prevents text selection as well */
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.container--image-container > img:hover{
+    transform: scale(180%);
+}
+
+@media screen and (max-width: 930px){
+    .first--first{
+        flex-wrap: wrap;
+    }
+}

@@ -16,7 +16,7 @@
 .typed-cursor {
     font-size: 60px;
     padding-bottom: 100px;
-
+  
 }
 
 .chevron-container {
@@ -34,6 +34,8 @@
     border-bottom: 1px solid #000;
     border-left: 1px solid #000;
     transform: rotate(-45deg);
+
+
   }
   
   @keyframes bounce {

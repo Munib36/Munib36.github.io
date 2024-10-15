@@ -1,8 +1,16 @@
-import React from "react"
+import React, {useState} from "react"
+
 
 export default function App() {
-
+    const [counter, setCounter] = useState(0);
+  
+    setInterval(() => {
+      setCounter(count => count + 1)
+    }, 1000);
+  
     return (
-        <h1>hi</h1>
-    )
+      <p>{counter} seconds have passed.</p>
+    );
 }
+
+

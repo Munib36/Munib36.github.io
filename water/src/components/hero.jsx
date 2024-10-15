@@ -32,9 +32,43 @@ function Typing() {
 
 
 function Chevron(){
+      
+
+    let [opacity, setOpacity] = React.useState(1);
+    let circle = React.useRef(null)
+    let YMax = 200;
+
+    React.useEffect(()=>{
+      const handleScroll = () => {
+        
+        let YScroll = window.scrollY;
+  
+        if (YScroll > YMax) {
+          setOpacity(0)
+        } else {
+          setOpacity(1 - (YScroll / YMax));
+        }
+  
+        
+  
+        
+      }
+      window.addEventListener("scroll", handleScroll)
+
+      return () => {window.removeEventListener("scroll", handleScroll)}
+    }, [])
+
+    React.useEffect(()=>{
+      if (circle.current) {
+        circle.current.style.opacity = opacity;
+      }
+    }, [opacity])
+    
+
+
     return(
         <div className="chevron-container">
-            <div className="chevron"></div>
+            <div ref={circle} className="chevron"></div>
         </div>
     )
 }
@@ -46,6 +80,8 @@ export default function Hero(){
             <div className="Hero">
                 <Typing />
                 <Chevron />
+
+                
             </div>
     )
 }
