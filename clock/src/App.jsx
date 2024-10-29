@@ -12,11 +12,15 @@ function App() {
   },[])
 
   function DD(x){
-    if(x < 10){
-      return `0${x}`
-    }else{
-      return x
-    }
+
+    return (x < 10) ? `0${x}` : x;
+
+    // if(x < 10){
+    //   return `0${x}`
+    // }else{
+    //   return x
+    // }
+
   }
 
   useEffect(()=>{
