@@ -1,0 +1,15 @@
+{
+  "name": "munib36.github.io",
+  "version": "1.0.0",
+  "description": "- [Overview Of Projects](# Overview of Projects)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.2.0"
+  }
+}

@@ -1,3 +1,7 @@
+:root{
+  --duration: 1000ms;
+}
+
 *{
   color: white;
   font-family: "Red Hat Text", sans-serif;
@@ -42,7 +46,9 @@
 
 
 
-  /* animation: flip-before 2s linear forwards; */
+  animation: flip-before var(--duration) infinite;     
+  animation-fill-mode: forwards; 
+        /* !OVER HERE */
   transform-origin: bottom;
 
   backface-visibility: hidden;
@@ -97,7 +103,9 @@
   background-color: #34364f;
   overflow: hidden;
 
-  /* animation: flip-after 2s linear forwards; */
+  animation: flip-after var(--duration) infinite;
+  animation-fill-mode: forwards;
+          /* !OVER HERE 222 */
 
   transform-origin: top;
 

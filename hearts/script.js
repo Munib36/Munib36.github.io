@@ -1,7 +1,32 @@
+
+
+
 let body = document.getElementById("body")
 
 
 //! BACKGROUND
+
+function calculateDelay(value, minValue, maxValue, minDelay, maxDelay) {
+	// Clamp the value to ensure it's within the range
+	value = Math.max(minValue, Math.min(maxValue, value));
+	
+	// Calculate the delay using the inverse relationship
+	const delay = maxDelay - ((value - minValue) / (maxValue - minValue)) * (maxDelay - minDelay);
+	
+	return delay;
+}
+let delay = Math.round( calculateDelay(window.innerWidth, 5, 5000, 10, 100) );
+window.addEventListener("resize", (e)=>{
+	
+	// log(window.innerWidth)
+	// log( Math.round( calculateDelay(window.innerWidth, 5, 5000, 10, 100) ) )
+	delay = Math.round( calculateDelay(window.innerWidth, 5, 1500, 1, 150) );
+	log(delay)
+
+
+
+})
+
 let i = 0;
 setInterval( () => {
 
@@ -24,7 +49,7 @@ setInterval( () => {
         heart.remove();
     }, 10000);
 
-}, 50);
+}, delay);
 
 
 
@@ -98,7 +123,7 @@ function begin(){
 
 
   const popBalloon = event => {
-	console.log(event.srcElement.style.width)
+	// console.log(event.srcElement.style.width)
     event.stopPropagation()
     const balloon = event.target
     // balloon.classList.add('pop')
@@ -109,7 +134,7 @@ function begin(){
   }
   
   const deleteBalloon = balloon => {
-    balloon.removeEventListener('click', popBalloon)
+    balloon.removeEventListener("mousedown", popBalloon)
     balloon.removeEventListener('transitionend', deleteBalloon)
     balloon.parentNode.removeChild(balloon)
   }

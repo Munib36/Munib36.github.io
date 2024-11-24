@@ -1,0 +1,58 @@
+/* Remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set default font styles */
+  html, body {
+    height: 100%;
+    font-size: 100%;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* Reset headings, paragraphs, and lists */
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Reset links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Reset table styles */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  img, picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Remove button, input, and textarea borders */
+  button, input, textarea {
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  /* Remove default form element focus outlines */
+  :focus {
+    outline: none;
+  }
+  

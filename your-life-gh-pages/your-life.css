@@ -1,0 +1,301 @@
+/**
+ * Normalize
+ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Helvetica, Ariel, sans-serif;
+  margin: 8px; /* for page padding on mobile */
+}
+
+/**
+ * Common Page Styles
+ */
+.title-box {
+  padding-top: 1rem;
+  text-align: center;
+}
+.title {
+  display: inline;
+  color: #000080;
+}
+.unitbox-label {
+  display: inline;
+}
+.unitbox {
+  display: inline;
+  font-family: sans-serif;
+  line-height: 1.125;
+  padding: 0 0.75em 0 0;
+  margin: 0;
+  color: #CB0509;
+  font-size: 2em;
+  font-weight: 700;
+  border-radius: 0;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #CB0509;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23CB0509%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat, repeat;
+	/* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+	background-position: right 0em top 50%, 0 0;
+	/* icon size, then gradient */
+  background-size: .45em auto, 100%;
+}
+/* Hide arrow icon in IE browsers */
+.unitbox::-ms-expand {
+	display: none;
+}
+.unitbox option {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+
+.dob {
+  text-align: center;
+}
+.instruction {
+  font-size: 0.9em;
+  margin-bottom: 0.3rem;
+}
+.month {
+  padding: 1.25px;
+}
+.day {
+  width: 2em;
+}
+.year {
+  width: 3em;
+}
+input:required:invalid.touched {
+  border: 2px solid red;
+}
+.chart {
+  position: relative;
+  margin: 4rem auto 2rem auto;
+  padding: 0;
+  list-style-type: none;
+}
+.x-axis {
+  position: absolute;
+  top: -2.75em;
+  height: 2.75em;
+  width: 100%;
+}
+.x-axis .markers,
+.y-axis .markers {
+  font-size: 0.8rem;
+  color: black;
+}
+.credits {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #aaaaaa;
+  padding-bottom: 1rem;
+}
+.credits a:link,
+.credits a:hover,
+.credits a:visited {
+  color: #aaaaaa;
+}
+
+
+
+/**
+* Page Specific styles
+*/
+/* INDEX */
+.index {
+  text-align: center;
+  margin: 25vh auto 0;
+  padding: 0;
+}
+.index li {
+  font-size: 2.5em;
+}
+
+/* YEARS */
+.years {
+  max-width: 380px; /* 38px per year * 10years = 380px */
+}
+.years > li {
+  border: 1px solid black;
+  width: 5.789473684%; /* 22px/380px */
+  /*  For border-box sizing, width includes borders. Thus a         //
+  //  22px width is a like a padding of 20px with two 1px borders.  */
+  padding-bottom: 5.263157895%; /* 20px/380px */
+  margin: 2.105263158%; /* 8px/380px */
+  float: left;
+  transform: rotate(45deg);
+}
+
+/* MONTHS */
+.months {
+  max-width: 504px; /* 14px per month * 36 months = 504px */
+}
+.months > li {
+  border: 1px solid black;
+  width: 2.380952381%; /* 12px/504px */
+  padding-bottom: 1.984126984%; /* 10px/504px */
+  margin: .198412698%; /* 1px/504px */
+  border-radius: 50%;
+  float: left;
+}
+
+/* WEEKS */
+.weeks {
+  max-width: 624px; /* 12px per week * 52weeks = 624px */
+}
+.weeks > li {
+  border: 1px solid black;
+  width: 1.282051282%; /* 8px/624px */
+  padding-bottom: .961538462%; /* 6px/624px */
+  margin: .320512821%; /* 2px/624px */
+  float: left;
+}
+.weeks--x-label {
+  color: #000080;
+  font-size: 1.25rem;
+}
+.weeks--y-label {
+  color: #000080;
+  transform: rotate(-90deg);
+  font-size: 1.25rem;
+  position: absolute;
+  left: -118px;
+  top: 78px;
+}
+.weeks--x-arrow {
+  padding-left: 10px;
+  vertical-align: bottom;
+}
+@media (max-width: 350px) {
+  .weeks--x-arrow {
+    display: none;
+  }
+}
+.weeks--y-arrow {
+  padding-right: 10px;
+  vertical-align: bottom;
+}
+.weeks--x-markers span {
+  position: absolute;
+  bottom: 0;
+}
+/* The year is divided into 52 weeks, so the % marker location //
+// can be found at (1/52)n (where n is the week number). We    //
+// must offset by 1 because we start counting at 1, so the     //
+// final equation is (n/52)-(1/52)                             */
+.weeks--x-markers span:nth-of-type(1) { left: 0;             }
+.weeks--x-markers span:nth-of-type(2) { left: 7.6923076920%; }
+.weeks--x-markers span:nth-of-type(3) { left: 17.307692308%; }
+.weeks--x-markers span:nth-of-type(4) { left: 26.923076923%; }
+.weeks--x-markers span:nth-of-type(5) { left: 36.538461538%; }
+.weeks--x-markers span:nth-of-type(6) { left: 46.153846154%; }
+.weeks--x-markers span:nth-of-type(7) { left: 55.769230769%; }
+.weeks--x-markers span:nth-of-type(8) { left: 65.384615385%; }
+.weeks--x-markers span:nth-of-type(9) { left: 75%;           }
+.weeks--x-markers span:nth-of-type(10) { left: 84.615384615%; }
+.weeks--x-markers span:nth-of-type(11) { left: 94.230769231%; }
+
+.weeks--y-markers span {
+  position: absolute;
+  left: -1.25em;
+}
+
+.weeks--y-markers span:nth-of-type(1) { top: 0; } /* (n/90) */
+.weeks--y-markers span:nth-of-type(2) { top: 5.555555556%; }
+.weeks--y-markers span:nth-of-type(3) { top: 11.111111111%; }
+.weeks--y-markers span:nth-of-type(4) { top: 16.666666667%; }
+.weeks--y-markers span:nth-of-type(5) { top: 22.222222222%; }
+.weeks--y-markers span:nth-of-type(6) { top: 27.777777778%; }
+.weeks--y-markers span:nth-of-type(7) { top: 33.333333333%; }
+.weeks--y-markers span:nth-of-type(8) { top: 38.888888889%; }
+.weeks--y-markers span:nth-of-type(9) { top: 44.444444444%; }
+.weeks--y-markers span:nth-of-type(10) { top: 50%; }
+.weeks--y-markers span:nth-of-type(11) { top: 55.555555556%; }
+.weeks--y-markers span:nth-of-type(12) { top: 61.111111111%; }
+.weeks--y-markers span:nth-of-type(13) { top: 66.666666667%; }
+.weeks--y-markers span:nth-of-type(14) { top: 72.222222222%; }
+.weeks--y-markers span:nth-of-type(15) { top: 77.777777778%; }
+.weeks--y-markers span:nth-of-type(16) { top: 83.333333333%; }
+.weeks--y-markers span:nth-of-type(17) { top: 88.888888889%; }
+.weeks--y-markers span:nth-of-type(18) { top: 94.444444444%; }
+.weeks--y-markers span:nth-of-type(19) {
+  bottom: -1em;
+  left: 100%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/**
+ * Utilities
+ */
+.group:after {
+  /* "group" is another name for clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+
+/**
+ * Print Styles
+ */
+@page {
+  size: Letter portrait;
+}
+
+
+@media print {
+  .credits p,
+  .chart li {
+    /* Force backgrounds to show (like the red shapes). This overrides the print
+      dialog option "Print backgrounds," which often defaults to disabled). We
+      target the affected elements directly because inheritance wasn't sufficient
+      in Firefox. */
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  .unitbox {
+    border-bottom: none;
+    padding: 0;
+    background-image: none;
+  }
+
+  .month {
+    appearance: none;
+    width: 96px;
+    font-size: 18px;
+  }
+  .day {
+    font-size: 18px;
+  }
+  .year {
+    font-size: 18px;
+  }
+
+  .print-hide {
+    display: none;
+  }
+}

@@ -5,12 +5,13 @@ import "./resets.css";
 
 function App() {
 
+
   return (
     <>
       <h3>bombing ur house in:</h3>
       <Timer 
-        beforeNumb={52}
-        afterNumb={53}
+        beforeNumb={2}
+        afterNumb={3}
       />
       <Footer />
     </>
