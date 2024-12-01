@@ -1,0 +1,82 @@
+@import "./constants.css";
+
+
+body{
+  background-color: var(--background-color);
+}
+
+.nav{
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 50px;
+  right: 50px;
+  height: 32px;
+  padding: 24px 0px;
+  width: calc(100% - 100px);
+
+  align-items: center;
+
+
+}
+.nav > img{
+  height: 100%;
+}
+.nav > .list{
+  margin-left: auto;
+
+}
+.nav > .list > a{
+  margin-left: 40px;
+  text-decoration: none;
+  color: var(--white);
+  
+}
+
+.nav > .button{
+  display: none;
+  margin-left: auto;
+  padding: 6px;
+  cursor: pointer;
+}
+.button > .img{
+  width: 26px;
+}
+.menu{
+  pointer-events: none;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 200px;
+  right: 50px;
+  transition: all 100ms;
+
+
+  
+  padding-inline: 30px;
+  height: 250px;
+  justify-content: space-around;
+  border-radius: 10px;
+
+  background-image: linear-gradient(144.39deg, #fff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+}
+
+.menu > a{
+  text-decoration: none;
+  color: var(--white);
+  text-align: center;
+
+}
+@media screen and (max-width: 650px){
+  .nav > .list{
+    display: none;
+  }
+  .nav > .button{
+    display: inline;
+  }
+}
+#button:checked ~ .menu {
+  opacity: 1;
+  top: 70px;
+}
