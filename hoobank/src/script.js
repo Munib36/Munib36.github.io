@@ -4,6 +4,7 @@ let ecks = false;
 btn.addEventListener("click", ()=>{
     console.log(ecks)
     if(ecks){
+        // test 
         console.log("hi " + ecks)
         img.src = "/hamburg.svg"
         ecks = false;
