@@ -1,0 +1,397 @@
+    
+
+#pagewrapper {
+overflow:hidden
+}
+
+/*  header */
+#wrap {
+display:none
+}
+
+#topmenucontainer { background:#FFF}
+
+
+#topadminlinks {display:none}
+#logo {display:none}
+#smlogo {display:block !important; width: 120px; float: left}
+
+
+div.col-8.topright {
+ width:100%
+}
+
+#headerelements {
+padding-top: 10px;
+}
+
+.menu-toggle {
+margin-top:0
+}
+
+#menu-title {
+display:none
+}
+
+.btn {
+    margin: 0 10px;
+        padding: 5px 10px 5px 10px;
+        font-size:15px
+}
+
+.topright {
+ padding-right:10px;
+ border-bottom:3px #99c221 solid
+}
+
+
+.topleft {
+min-height:auto
+}
+/* menu */
+#menuwrapper {
+top: 72px;
+}
+
+nav li.level-one {
+width:100%
+}
+
+nav a {
+text-align:left;
+padding-top:5px;
+border-bottom:1px solid #FFF;
+margin-right:30px;
+padding-top:15px
+}
+
+nav .level-two {
+display:none
+}
+/* search */
+
+
+input[type="text"] {
+top:10px;
+
+}
+
+input[type="text"]:focus {
+width:90%;
+padding-left:20px;
+color:#FFF
+}
+
+input[type="submit"] {
+top:10px;
+}
+
+/*  mobile only menu */
+#navdiv form {display:block}
+#navdiv form {margin-bottom:70px}
+
+li.mobilemenu.level-one {display:block}
+
+#menuwrapper {
+ height: 500px;
+  max-height: 500px;
+  width: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling:touch; // mobile safari
+}
+
+#menuwrapper ul {
+padding-right:40px
+}
+
+/* banner */
+.bannerleft {
+background-image: url(/sidebarbg.png);
+    background-position-y: top;
+    background-repeat: no-repeat;
+   /*   margin-top: 75px;
+ min-height:150px; */
+  margin-top:70px;
+   background-position-x: right;
+    background-color:#98BD36;
+    min-height:10px
+}
+
+#bannerlefttitle {
+    margin-top: 10%;
+    margin-left: 0%;
+    font-size:1.8em;
+    width:100%;
+    display:none; !important;
+   
+}
+
+.bannerright {
+display:none !important;
+height:0
+}
+
+.sidebar {
+display:none
+}
+
+#breadcrumb {
+display:none;
+}
+
+
+
+/* main content */
+
+#maincontent {
+padding-top:10px;
+min-height:300px
+}
+
+#leftcontent {
+margin-right:0;
+padding-right: 5px;
+}
+
+
+
+
+/* footer */
+#footer {
+min-height:300px
+}
+
+#footer h2 {
+margin:0; padding:0;
+font-size:90%
+}
+
+div p#footertext {
+font-size:14px;
+padding:0
+}
+
+img#uw {
+	width: 70%;
+        height: 70%;
+}
+
+#termsbox strong, #termsbox a {
+display:block;
+text-align:center
+}
+
+#adminlinks div.col-6, div.col-3 {
+    padding: 0;
+    padding-top: 10px;
+  
+}
+
+ #adminlinks a {margin-left:0}
+#adminlinks .col-3, #adminlinks .col-6 {margin-top:0;  text-align: center;}
+#adminlinks .sm img {height: 100%;}f
+
+
+/* homepage */
+
+.box_right img, .box_left img {
+    width: 100%;
+    margin: 0px;
+}
+
+
+#donations .col-12 {
+    min-height: 300px;
+    background: #ffffff url(/images/sm_manholdingbox2.png) no-repeat center top;
+    color: white;
+    font-size:12px;
+    background-size: cover;  
+    }
+  
+  #testimonials .col-12 {
+  background-image:none
+  } 
+    
+#don_text {
+font-size:14px
+}
+
+
+#homepage h2 {
+font-size:20px
+}
+
+    .bannerright {
+display:block
+
+}
+
+  .bannerleft {
+  display:none
+  }
+
+
+
+.sidebar {
+display:block;
+min-height: 0;
+ margin-top:70px;
+background-color: #FFF !important
+}
+
+
+#sidebarmenu ul {
+    display: none;
+    list-style: none;
+    line-height: 2.2em;
+    margin-left: 0;
+    padding: 0;
+    padding-left:15px;
+    background:#FFF;
+    font-size:12px
+}
+
+#sidebarmenu h3 {
+    color: #0b685e;
+    font-size: 16px;
+    margin:5px 0;
+    cursor: pointer;
+   margin-left: 0 ;
+  padding-bottom: 10px;
+   border-bottom: 0;
+  margin-right: 0;
+    text-transform: uppercase;
+    color: #00685e;
+    font-weight: bold;
+  margin-bottom: 0
+   
+}
+
+
+.sidebar.nomenu h3 {display:block;}
+
+
+#arrow {display:inline-block}
+
+
+#sbtitlebg {
+    padding-left: 15px;
+    border-bottom: 3px #99c221 solid;
+    background-color: #F9FBEF;
+    padding-top:10px
+}
+
+
+
+
+.fourboxes, .threeboxes {
+    margin-right: 0 !important
+}
+
+
+.banneritemtext {
+    margin-top: 0%;
+    color: #FFF;
+    margin-left: 10%;
+    margin-right: 10%;
+} 
+/* banner */
+.bannernew {display:none !important}
+.bannernewmobile {display:block !important}
+.slick-dots {display:none !important}
+#col_banner2 {margin-top:70px;}
+.bannertitle {font-size:100%}
+.bannermore {margin-top:15px}
+
+#programdetails {
+moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1 !important;}
+
+
+
+
+/* quote */
+.slider img.facecircle {
+    width: 100px !important;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+.sliderdiv {
+text-align:center;
+margin-left:0;
+font-size:12px
+}
+
+.slider {
+   
+    height: 300px;
+    }
+
+.quotation{
+ 
+  //margin: 0 auto;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 0;
+  line-height: 1.4;
+  width: 100%;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.quotation:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: #9bc035;
+  font-size: 3em;
+}
+.quotation::after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 35px;
+  color: #9bc035;
+  font-size: 3em;
+}
+
+footer{
+  margin:0;
+  text-align: center;
+  font-size: .8em;
+  font-style: italic;
+  color: #FFF;
+}
+
+footer a:before {
+    content: '\A';
+    white-space: pre;
+}
+
+#hidedonate{ display:none !important;}
+
+
+/* footer new */
+
+div#termsbox {width:100% !important}
+#flogos img { max-width:300px}
+div.sm {text-align:center}
+#flogos {text-align:center}
+#flogos a {display:block; margin-top:10px}
+
+	#adminlinkswrapper div.col-5 {
+		text-align: center;
+	 	width: 100%;
+	 	
+	}

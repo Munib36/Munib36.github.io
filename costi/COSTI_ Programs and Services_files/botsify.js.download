@@ -1,0 +1,45 @@
+//var bcwSingleLoader = "undefined";
+var bcwSingleLoader = (typeof bcwSingleLoader === 'undefined') ? undefined : bcwSingleLoader;
+
+function bcwaddStyleLink(){
+    var href_link = "https://widget.botsify.com/dist/css/app.css";
+        var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.scoped = '';
+    link.href = href_link;
+    head.appendChild(link);
+}
+
+function bcwcreateLauncher(){
+    var src = "https://widget.botsify.com/dist/js/app.js";
+        if (typeof window.bcw_widget === "undefined" && bcwSingleLoader !== true) {
+        bcwSingleLoader = true;
+        bcwaddStyleLink();
+        var widget = document.createElement('script');
+        widget.src = src;
+        document.head.appendChild(widget);
+    }
+    return true;
+}
+
+bcwcreateLauncher();
+
+var x = 0;
+if(bcwintervalID === undefined) {
+    var bcwintervalID = window.setInterval(function() {
+        if (typeof window.bcw_widget != "undefined") {
+            window.clearInterval(bcwintervalID);
+            const botParams = {
+                bot_api : "jxXflBqqePDmdgYPtXtRxG2y9rJai2xI2Mt7mItf",
+                inline: "",
+                story_id: "",
+                host: "https://app.botsify.com",
+                <!-- host: "http://localhost:8001", -->
+                userData: (typeof window.setParams != "undefined") ? window.setParams() : null
+            };
+                                    window.bcw_widget.init('show', botParams);
+        }
+    }, 300);
+}

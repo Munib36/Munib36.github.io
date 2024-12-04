@@ -2,4 +2,6 @@
     --background-color: #0a0d19;
     --light-color: #05f5ff;
     --white: #fef6fe;
+
+    --muted: hsla(0,0%,100%,.7);
 }

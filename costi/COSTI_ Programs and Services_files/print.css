@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#topadminlinks,
+#topmenucontainer > div:nth-child(2) > div.col-8.topright,
+#menu-title,
+.test,
+.sidebar,
+#breadcrumb,
+.bannerleft,
+#footer h2,
+#footertext,
+#footer p,
+#adminlinks,
+#funderlinks,
+
+body > iframe, body > bcw-widget > div
+,#pagewrapper > div:nth-child(3) > div.col-3.bannerleft,
+#pagewrapper > div:nth-child(3) > div.col-9.bannerright,
+
+
+.button {display:none;}
+
+
+#leftcontent, #maincontent  {width:100%; background:gray;};

@@ -1,0 +1,65 @@
+@import "./constants.css";
+
+.app{
+    margin-inline: 50px;
+}
+
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    height: 100%;
+}
+.card{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 16px;
+}
+.card:hover{
+    background: linear-gradient(120deg, rgba(77, 80, 81, 0.879), rgba(69, 73, 74, 0.153));
+
+    /* background-color: red; */
+}
+.card-img-container{
+    aspect-ratio: 1/1;
+    height: 80%;
+    border-radius: 50%;
+    background-color: rgba(9,151,124,.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-img-container img{
+    /* height: 100%; */
+    aspect-ratio: 1/1;
+
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-title{
+    color: var(--white);
+    font-size: 18px;
+}
+.card-desc{
+    color: var(--muted);
+    font-size: 16px;
+}
+
+
+
+.comp-button{
+    background: linear-gradient(157.81deg,#def9fa -43.27%,#bef3f5 -21.24%,#9dedf0 12.19%,#7de7eb 29.82%,#5ce1e6 51.94%,#33bbcf 90.29%);
+    color: rgb(0, 4, 15);
+    padding: 18px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 16px;
+    display: inline;
+}

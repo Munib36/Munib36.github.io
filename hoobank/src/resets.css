@@ -19,6 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 
+	color: #fef6fe;
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -45,4 +46,10 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+
+
+button{
+	border: none;
 }

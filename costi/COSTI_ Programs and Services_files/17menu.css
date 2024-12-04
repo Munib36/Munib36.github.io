@@ -1,0 +1,165 @@
+nav#navdiv {
+	width:900px
+}
+nav li {
+	float:left;
+	position:relative;
+}
+nav li + li {
+	border-left:1px solid #ccc;
+}
+/* nav a {
+    text-decoration:none;
+	padding:7px 10px;
+	display:block;
+	font-family: Gotham Bold, Gotham Book, Arial;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: white;
+	line-height: 16px;
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 1px;
+} */
+nav a:hover {
+	color:#99C221;
+	
+}
+nav a:active {
+	color:#fff;
+	background:#0090cf;
+}
+/* Child Menu Styles */
+nav .level-two {
+	position:absolute;
+	top:100%;
+	left:-9999px;
+	background:#FAFCF4;
+	width:400px;
+	padding-bottom:20px;
+
+	/* new */
+	border-bottom: #8ab927 1px solid;
+	border-left: #8ab927 1px solid;
+	border-right: #8ab927 1px solid;
+
+
+}
+nav li:hover .level-two {
+	left:0;
+	
+	
+	
+}
+nav .level-two li {
+	width:100%;
+	border:0;
+	padding-top: 8px;
+        padding-left: 8px;
+}
+
+nav .level-two li a {
+color:#000
+}
+
+nav .level-two li a:hover {
+color:#00685e
+}
+
+/* Grandchild Menus - Level Three */
+.level-three {
+	border-left:1px solid #ccc;
+	position:absolute;
+	top:0;
+	left:-9999px;
+	background:#779999
+}
+.level-two li:hover .level-three {
+	left:100%;
+}
+li.levelind {
+	background:#779999 url(/images/drop.gif) bottom right no-repeat; 
+}
+/* end new */
+
+
+nav a#pull {
+	display: none;
+}
+nav li.level-one {
+	width:100%;
+}
+nav ul.level-two li a {
+	font-weight:normal;
+	text-align:left;
+	
+}
+
+
+
+
+
+
+
+/* menu */
+
+
+nav ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+
+
+
+
+
+#menuwrapper {
+	background: #00685e; width: 100%;top:150px;
+	position: absolute;
+	border-bottom: #8ab927 1px solid;
+}
+
+
+nav a {
+    text-decoration: none;
+    padding: 9px 10px 20px 10px;
+    display: block;
+    font-family: Lato, Gotham Bold, Gotham Book, Arial;
+    font-size: 16px;
+    text-transform: Capitalize;
+    color: white;
+    line-height: 16px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+nav li.level-one { width:auto;margin-right:3.7%}
+nav li + li { border:none}
+nav#navdiv {width:100%; padding-left:8%;margin-top:5px}
+/*
+#menuwrapper {
+    top: 347px;
+    position: absolute;
+    background: url(/images/banner_new.png);
+    width: 100%;
+    text-align: center;
+    height: 55px;
+    padding-top: 5px;
+    z-index: 100;
+} */
+
+
+
+
+#navdiv form {display:none} /* hide for mobile */
+
+
+@media only screen and (max-width:1600px) {
+	nav li.level-one {
+	margin-right: 2%;
+	
+	}
+}
