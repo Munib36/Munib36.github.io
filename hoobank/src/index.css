@@ -3,6 +3,10 @@
 
 body{
   background-color: var(--background-color);
+  width: clamp(20px, 100%, 1280px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav{
@@ -228,6 +232,8 @@ body{
 }
 .hero-text-desc{
   max-width: 450px;
+  line-height: 28px;
+  color: var(--muted);
 }
 
 .hero-img{
@@ -248,7 +254,7 @@ body{
   align-items: center; /* Centers items vertically in the row */
   gap: 30px;
 
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   margin-inline: 30px;
 
 }

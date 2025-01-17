@@ -3,8 +3,12 @@
     /* height: 500px; */
     display: flex;
     gap: 20px;
+    padding: 60px 0px;
 }
 
+.component:nth-child(even) {
+    flex-direction: row-reverse;
+}
 .comp-half1{
     flex: 1;
 
@@ -29,6 +33,15 @@
     flex: 1;
 
 }
+.comp-half2 img{
+    width: 100%;
+
+}
+.comp-custom{
+    display: flex;
+    margin-top: 26px;
+}
+
 
 
 

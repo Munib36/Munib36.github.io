@@ -44,8 +44,25 @@ export default function App() {
         </div>
         
       </Component>
-      <Component></Component>
-      <Component></Component>
+      <Component
+		title={"Easily control your \nbilling & invoicing."}
+		text="With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market."
+		custom={
+			<>
+				<a><img src="/applestore.svg" alt="apple store" /></a>
+				<a><img src="/googleplay.svg" alt="google play" /></a>
+			</>
+		}
+>
+        <img src="/comp2.png" />
+      </Component>
+      <Component
+	  		title={"Find a better card deal \n we’ll handle the in few easy steps."}
+			text="Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat."
+			custom={<button className='comp-button'>Get Started</button>}
+	  >
+		<img src="/comp3.png" alt="" />
+	  </Component>
     </div>
   )
 }
